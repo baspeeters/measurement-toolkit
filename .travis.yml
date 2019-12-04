@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - node
+  - lts/*
+  - 10
+  - 8
+
+cache: npm
+
+jobs:
+  include:
+    - stage: lint
+      script: npm run lint
+    - stage: coverage
+      node_js: node
+      install: npm install -g codecov
+      script:
+        - npm install
+        - ./node_modules/.bin/nyc --reporter=text --reporter=lcovonly npm test
+        - codecov

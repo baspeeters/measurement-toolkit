@@ -1,0 +1,41 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "0.0.9",
+  "description": "Boilerplate to quickly get started with a TypeScript project",
+  "scripts": {
+    "lint": "$(npm bin)/tslint -c tslint.json ./**/*.ts",
+    "test": "$(npm bin)/ts-mocha test/**/*.spec.ts",
+    "test:coverage": "nyc --reporter=text --reporter=text-summary npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baspeeters/typescript-boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "boilerplate",
+    "template",
+    "minimal",
+    "setup",
+    "quickstart"
+  ],
+  "author": "Bas Peeters <bas@peete.rs>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/baspeeters/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/baspeeters/typescript-boilerplate#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "ts-mocha": "^6.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "tslint": "^5.20.1"
+  }
+}
