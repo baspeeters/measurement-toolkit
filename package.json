@@ -1,7 +1,7 @@
 {
-  "name": "typescript-boilerplate",
+  "name": "unit-converter",
   "version": "0.0.9",
-  "description": "Boilerplate to quickly get started with a TypeScript project",
+  "description": "Object Oriented Unit Converter using TypeScript",
   "scripts": {
     "lint": "$(npm bin)/tslint -c tslint.json ./**/*.ts",
     "test": "$(npm bin)/ts-mocha test/**/*.spec.ts",
@@ -9,22 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/baspeeters/typescript-boilerplate.git"
+    "url": "https://github.com/baspeeters/unit-converter.git"
   },
   "keywords": [
-    "typescript",
-    "boilerplate",
-    "template",
-    "minimal",
-    "setup",
-    "quickstart"
+    "converter",
+    "conversion",
+    "weight",
+    "mass",
+    "metric",
+    "imperial",
+    "kilograms"
   ],
   "author": "Bas Peeters <bas@peete.rs>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/baspeeters/typescript-boilerplate/issues"
+    "url": "https://github.com/baspeeters/unit-converter/issues"
   },
-  "homepage": "https://github.com/baspeeters/typescript-boilerplate#readme",
+  "homepage": "https://github.com/baspeeters/unit-converter#readme",
   "devDependencies": {
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
@@ -33,9 +34,7 @@
     "nyc": "^14.1.1",
     "ts-mocha": "^6.0.0",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
-  },
-  "dependencies": {
+    "typescript": "^3.7.3",
     "tslint": "^5.20.1"
   }
 }
