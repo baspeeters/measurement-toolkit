@@ -7,15 +7,21 @@ A template to quickly get started with a TypeScript project.
 ## Testing
 
 ### Run tests
-```npm test```
+```
+npm test
+```
 
 ### Run Linter
-```npm run lint```
+```
+npm run lint
+```
 
-### Test coverage
+### Coverage
 
 #### Run tests with coverage
-```npm run test:coverage```
+```
+npm run test:coverage
+```
 
 #### Coverage graph
 ![a](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graphs/sunburst.svg)
