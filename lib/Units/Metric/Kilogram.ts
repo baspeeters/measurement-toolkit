@@ -11,6 +11,6 @@ import {Gram} from "./Gram";
 
 export class Kilogram extends Unit {
     protected converters = {
-        Gram: (value: number = 0): Gram => new Gram(value * Math.pow(10, 3)),
+        Gram: (): Gram => new Gram(this.value * Math.pow(10, 3)),
     };
 }
