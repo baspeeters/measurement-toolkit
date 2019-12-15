@@ -1,6 +1,6 @@
 # Unit Converter
 
-A template to quickly get started with a TypeScript project.
+An Object Oriented library to convert units, built in TypeScript.
 
 [![Build Status](https://travis-ci.org/baspeeters/unit-converter.svg?branch=master)](https://travis-ci.org/baspeeters/unit-converter)  [![codecov](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/unit-converter)
 
