@@ -6,11 +6,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+import {DerivedUnit} from "../../DerivedUnit";
 import {Unit} from "../../Unit";
 import {Kilogram} from "./Kilogram";
 
-export class Gram extends Unit {
-    protected converters = {
-        Kilogram: (): Kilogram => new Kilogram(this.value * Math.pow(10, -3)),
+export class Milligram extends DerivedUnit {
+    public baseUnit = new Kilogram(this.value * Math.pow(10, -6));
+
+    protected baseUnitConverter = {
+        Kilogram: (): Unit => new Kilogram(this.value * Math.pow(10, -6)),
     };
 }

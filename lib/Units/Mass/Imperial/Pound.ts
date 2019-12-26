@@ -6,11 +6,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {Unit} from "../../Unit";
-import {Gram} from "./Gram";
+import {BaseUnit} from "../../BaseUnit";
+import {Ounce} from "./Ounce";
 
-export class Kilogram extends Unit {
-    protected converters = {
-        Gram: (): Gram => new Gram(this.value * Math.pow(10, 3)),
+export class Pound extends BaseUnit {
+    public derivedUnits = {
+        Ounce: () => new Ounce(this.value * 16),
     };
 }
