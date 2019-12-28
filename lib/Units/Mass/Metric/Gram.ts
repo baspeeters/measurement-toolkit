@@ -14,6 +14,6 @@ export class Gram extends DerivedUnit {
     public baseUnit = new Kilogram(this.value * Math.pow(10, -3));
 
     protected baseUnitConverter = {
-        Kilogram: (): Unit => new Kilogram(this.value * Math.pow(10, -3)),
+        Kilogram: (): Unit => this.baseUnit,
     };
 }

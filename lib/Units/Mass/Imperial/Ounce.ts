@@ -11,9 +11,9 @@ import {Unit} from "../../Unit";
 import {Pound} from "./Pound";
 
 export class Ounce extends DerivedUnit {
-    public baseUnit = new Pound(this.value * 16);
+    public baseUnit = new Pound(this.value / 16);
 
     protected baseUnitConverter = {
-        Pound: (): Unit => new Pound(this.value / 16),
+        Pound: (): Unit => this.baseUnit,
     };
 }

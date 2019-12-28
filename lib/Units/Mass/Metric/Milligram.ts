@@ -14,6 +14,6 @@ export class Milligram extends DerivedUnit {
     public baseUnit = new Kilogram(this.value * Math.pow(10, -6));
 
     protected baseUnitConverter = {
-        Kilogram: (): Unit => new Kilogram(this.value * Math.pow(10, -6)),
+        Kilogram: (): Unit => this.baseUnit,
     };
 }
