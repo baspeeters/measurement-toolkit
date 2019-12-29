@@ -8,7 +8,6 @@
  */
 import {expect} from "chai";
 import {Gram} from "../../../../lib/Units/Mass/Metric/Gram";
-import {Kilogram} from "../../../../lib/Units/Mass/Metric/Kilogram";
 
 describe("Gram", () => {
     it("should convert grams to kilograms and back", () => {
