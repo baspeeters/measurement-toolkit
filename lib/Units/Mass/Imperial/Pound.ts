@@ -7,10 +7,15 @@
  * file that was distributed with this source code.
  */
 import {BaseUnit} from "../../BaseUnit";
+import {Kilogram} from "../Metric/Kilogram";
 import {Ounce} from "./Ounce";
 
 export class Pound extends BaseUnit {
     public derivedUnits = {
         Ounce: () => new Ounce(this.value * 16),
+    };
+
+    protected converters = {
+        Kilogram: (): Kilogram => new Kilogram(this.value * 0.45359237),
     };
 }

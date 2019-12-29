@@ -6,6 +6,8 @@ An Object Oriented library to convert units, built in TypeScript.
 
 ## Usage
 
+### Conversion
+
 ```javascript
 const grams = new Gram(127);
 
@@ -13,6 +15,19 @@ grams.to.Ounce();
 
 > Ounce {
 >   value: 4.479793167596712
+> }
+```
+
+### Math operations
+
+```javascript
+const tons = new Megagram(5.2);
+const ounces = new Ounce(50000);
+
+tons.subtract(ounces);
+
+> Megagram {
+>   value: 3.78252384375
 > }
 ```
 

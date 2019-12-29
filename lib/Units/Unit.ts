@@ -28,4 +28,46 @@ export abstract class Unit {
 
         return this.converters;
     }
+
+    public subtract(unit: Unit): this {
+        this.value -= unit.to[this.constructor.name]().value;
+
+        return this;
+    }
+
+    public add(unit: Unit): this {
+        this.value += unit.to[this.constructor.name]().value;
+
+        return this;
+    }
+
+    public divideBy(unit: Unit): this {
+        this.value /= unit.to[this.constructor.name]().value;
+
+        return this;
+    }
+
+    public dividedBy(unit: Unit): this {
+        this.value = unit.to[this.constructor.name]().value / this.value;
+
+        return this;
+    }
+
+    public multiply(unit: Unit): this {
+        this.value *= unit.to[this.constructor.name]().value;
+
+        return this;
+    }
+
+    public percentageOf(unit: Unit): this {
+        this.value = (this.value / unit.to[this.constructor.name]().value) * 100;
+
+        return this;
+    }
+
+    public percentageOfThis(unit: Unit): this {
+        this.value = (unit.to[this.constructor.name]().value / this.value) * 100;
+
+        return this;
+    }
 }
