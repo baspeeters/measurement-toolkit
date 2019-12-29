@@ -36,4 +36,4 @@ npm run test:coverage
 ```
 
 #### Coverage graph
-![a](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graphs/sunburst.svg)
+[![Code Coverage](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/baspeeters/unit-converter)
