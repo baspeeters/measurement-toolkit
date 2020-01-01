@@ -2,8 +2,8 @@ import {expect} from "chai";
 import {
     Attogram, Centigram, Decagram, Decigram, Exagram, Femtogram, Gigagram, Gram, Hectogram, Kilogram, Megagram,
     Microgram, Milligram, Nanogram, Petagram, Picogram, Teragram, Yoctogram, Yottagram, Zeptogram, Zettagram,
-} from "../../../../lib/Units/Mass/SI";
-import {SiDerivedUnit} from "../../../../lib/Units/Mass/SI/SiDerivedUnit";
+} from "../../../../../lib/Units/Mass/SI";
+import {SiDerivedUnit} from "../../../../../lib/Units/Mass/SI/SiDerivedUnit";
 
 /**
  * This file is part of Unit Converter

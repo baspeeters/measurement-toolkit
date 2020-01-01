@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {Kilogram} from "../../../../lib/Units/Mass/SI/Kilogram";
+import {Kilogram} from "../../../../../lib/Units/Mass/SI/Kilogram";
 
 describe("Kilogram", () => {
     it("should convert kilogram to grams and back", () => {
