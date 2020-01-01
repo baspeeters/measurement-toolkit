@@ -145,4 +145,68 @@ describe("Metric System", () => {
             });
         });
     });
+
+    it("should convert derived units of kilogram to kilogram and back", () => {
+        const value = 72500;
+
+        expect((new Yottagram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+25");
+        expect((new Kilogram(7.25e+25)).to.Yottagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Zettagram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+22");
+        expect((new Kilogram(7.25e+22)).to.Zettagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Exagram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+19");
+        expect((new Kilogram(7.25e+19)).to.Exagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Petagram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+16");
+        expect((new Kilogram(7.25e+16)).to.Petagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Teragram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+13");
+        expect((new Kilogram(7.25e+13)).to.Teragram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Gigagram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e+10");
+        expect((new Kilogram(7.25e+10)).to.Gigagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Megagram(value)).to.Kilogram().value.toFixed()).to.equal("72500000");
+        expect((new Kilogram(72500000)).to.Megagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Hectogram(value)).to.Kilogram().value.toFixed()).to.equal("7250");
+        expect((new Kilogram(7250)).to.Hectogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Decagram(value)).to.Kilogram().value.toFixed()).to.equal("725");
+        expect((new Kilogram(725)).to.Decagram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Gram(value)).to.Kilogram().value.toFixed(9)).to.equal("72.500000000");
+        expect((new Kilogram(72.5)).to.Gram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Decigram(value)).to.Kilogram().value.toPrecision(9)).to.equal("7.25000000");
+        expect((new Kilogram(7.25)).to.Decigram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Centigram(value)).to.Kilogram().value.toPrecision(8)).to.equal("0.72500000");
+        expect((new Kilogram(0.725)).to.Centigram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Milligram(value)).to.Kilogram().value.toPrecision(7)).to.equal("0.07250000");
+        expect((new Kilogram(0.0725)).to.Milligram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Microgram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-5");
+        expect((new Kilogram(7.25e-5)).to.Microgram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Nanogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-8");
+        expect((new Kilogram(7.25e-8)).to.Nanogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Picogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-11");
+        expect((new Kilogram(7.25e-11)).to.Picogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Femtogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-14");
+        expect((new Kilogram(7.25e-14)).to.Femtogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Attogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-17");
+        expect((new Kilogram(7.25e-17)).to.Attogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Zeptogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-20");
+        expect((new Kilogram(7.25e-20)).to.Zeptogram().value.toFixed()).to.equal(value.toFixed());
+
+        expect((new Yoctogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-23");
+        expect((new Kilogram(7.25e-23)).to.Yoctogram().value.toFixed()).to.equal(value.toFixed());
+    });
 });

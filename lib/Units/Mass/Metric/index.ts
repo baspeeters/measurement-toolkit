@@ -6,9 +6,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {Kilogram} from "./Kilogram";
-import {KilogramDerivedUnit} from "./KilogramDerivedUnit";
-
-export class Gram extends KilogramDerivedUnit {
-    public baseUnit = new Kilogram(this.value * Math.pow(10, -3));
-}
+export {
+    Megagram,
+    Megagram as MetricTon,
+    Megagram as MetricTonne,
+    Megagram as Ton,
+    Megagram as Tonne,
+} from "./Megagram";
