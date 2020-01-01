@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 import {Kilogram} from "./Kilogram";
-import {KilogramDerivedUnit} from "./KilogramDerivedUnit";
+import {SiDerivedUnit} from "./SiDerivedUnit";
 
-export class Picogram extends KilogramDerivedUnit {
-    public baseUnit = new Kilogram(this.value * Math.pow(10, -15));
+export class Nanogram extends SiDerivedUnit {
+    public baseUnit = new Kilogram(this.value * Math.pow(10, -12));
 }

@@ -9,8 +9,8 @@
 import {expect} from "chai";
 import {BaseUnit} from "../../lib/Units/BaseUnit";
 import {DerivedUnit} from "../../lib/Units/DerivedUnit";
-import {Gram} from "../../lib/Units/Mass/Metric/Gram";
-import {Kilogram} from "../../lib/Units/Mass/Metric/Kilogram";
+import {Gram} from "../../lib/Units/Mass/SI/Gram";
+import {Kilogram} from "../../lib/Units/Mass/SI/Kilogram";
 
 describe("DerivedUnit", () => {
     it("should be of the proper type", () => {

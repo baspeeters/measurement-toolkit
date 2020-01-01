@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 import {Kilogram} from "./Kilogram";
-import {KilogramDerivedUnit} from "./KilogramDerivedUnit";
+import {SiDerivedUnit} from "./SiDerivedUnit";
 
-export class Hectogram extends KilogramDerivedUnit {
-    public baseUnit = new Kilogram(this.value * Math.pow(10, -1));
+export class Teragram extends SiDerivedUnit {
+    public baseUnit = new Kilogram(this.value * Math.pow(10, 9));
 }

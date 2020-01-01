@@ -6,9 +6,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {KilogramDerivedUnit} from "./KilogramDerivedUnit";
 import {Kilogram} from "./Kilogram";
+import {SiDerivedUnit} from "./SiDerivedUnit";
 
-export class Decigram extends KilogramDerivedUnit {
+export class Decigram extends SiDerivedUnit {
     public baseUnit = new Kilogram(this.value * Math.pow(10, -4));
 }

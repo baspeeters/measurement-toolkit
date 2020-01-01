@@ -10,7 +10,7 @@ import {BaseUnit} from "../../BaseUnit";
 import {DerivedUnit} from "../../DerivedUnit";
 import {Unit} from "../../Unit";
 
-export abstract class KilogramDerivedUnit extends DerivedUnit {
+export abstract class SiDerivedUnit extends DerivedUnit {
     public abstract baseUnit: BaseUnit;
 
     protected baseUnitConverter = {

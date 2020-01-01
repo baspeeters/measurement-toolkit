@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 import {Kilogram} from "./Kilogram";
-import {KilogramDerivedUnit} from "./KilogramDerivedUnit";
+import {SiDerivedUnit} from "./SiDerivedUnit";
 
-export class Femtogram extends KilogramDerivedUnit {
-    public baseUnit = new Kilogram(this.value * Math.pow(10, -18));
+export class Zettagram extends SiDerivedUnit {
+    public baseUnit = new Kilogram(this.value * Math.pow(10, 18));
 }

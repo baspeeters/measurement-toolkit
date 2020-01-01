@@ -8,7 +8,7 @@
  */
 import {expect} from "chai";
 import {Ounce} from "../../lib/Units/Mass/Imperial/Ounce";
-import {Megagram} from "../../lib/Units/Mass/Metric/Megagram";
+import {Megagram} from "../../lib/Units/Mass/SI/Megagram";
 
 describe("Unit", () => {
     it("should add up another unit", () => {

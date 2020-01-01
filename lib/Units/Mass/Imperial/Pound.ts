@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {BaseUnit} from "../../BaseUnit";
-import {Kilogram} from "../Metric/Kilogram";
+import {Kilogram} from "../SI/Kilogram";
 import {Ounce} from "./Ounce";
 
 export class Pound extends BaseUnit {

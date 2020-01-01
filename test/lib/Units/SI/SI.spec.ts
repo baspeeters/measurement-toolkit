@@ -1,26 +1,9 @@
 import {expect} from "chai";
-import {DerivedUnit} from "../../../../lib/Units/DerivedUnit";
-import {Attogram} from "../../../../lib/Units/Mass/Metric/Attogram";
-import {Centigram} from "../../../../lib/Units/Mass/Metric/Centigram";
-import {Decagram} from "../../../../lib/Units/Mass/Metric/Decagram";
-import {Decigram} from "../../../../lib/Units/Mass/Metric/Decigram";
-import {Exagram} from "../../../../lib/Units/Mass/Metric/Exagram";
-import {Femtogram} from "../../../../lib/Units/Mass/Metric/Femtogram";
-import {Gigagram} from "../../../../lib/Units/Mass/Metric/Gigagram";
-import {Gram} from "../../../../lib/Units/Mass/Metric/Gram";
-import {Hectogram} from "../../../../lib/Units/Mass/Metric/Hectogram";
-import {Kilogram} from "../../../../lib/Units/Mass/Metric/Kilogram";
-import {Megagram} from "../../../../lib/Units/Mass/Metric/Megagram";
-import {Microgram} from "../../../../lib/Units/Mass/Metric/Microgram";
-import {Milligram} from "../../../../lib/Units/Mass/Metric/Milligram";
-import {Nanogram} from "../../../../lib/Units/Mass/Metric/Nanogram";
-import {Petagram} from "../../../../lib/Units/Mass/Metric/Petagram";
-import {Picogram} from "../../../../lib/Units/Mass/Metric/Picogram";
-import {Teragram} from "../../../../lib/Units/Mass/Metric/Teragram";
-import {Yoctogram} from "../../../../lib/Units/Mass/Metric/Yoctogram";
-import {Yottagram} from "../../../../lib/Units/Mass/Metric/Yottagram";
-import {Zeptogram} from "../../../../lib/Units/Mass/Metric/Zeptogram";
-import {Zettagram} from "../../../../lib/Units/Mass/Metric/Zettagram";
+import {
+    Attogram, Centigram, Decagram, Decigram, Exagram, Femtogram, Gigagram, Gram, Hectogram, Kilogram, Megagram,
+    Microgram, Milligram, Nanogram, Petagram, Picogram, Teragram, Yoctogram, Yottagram, Zeptogram, Zettagram,
+} from "../../../../lib/Units/Mass/SI";
+import {SiDerivedUnit} from "../../../../lib/Units/Mass/SI/SiDerivedUnit";
 
 /**
  * This file is part of Unit Converter
@@ -30,8 +13,8 @@ import {Zettagram} from "../../../../lib/Units/Mass/Metric/Zettagram";
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-describe("Metric System", () => {
-    it("should convert between metric units in whole numbers", () => {
+describe("SI Units", () => {
+    it("should convert between SU units in whole numbers", () => {
         const grams = new Gram(1000);
 
         expect(grams.to.Yottagram().value.toExponential(0)).to.equal("1e-21");
@@ -59,7 +42,7 @@ describe("Metric System", () => {
         expect(grams.to.Yoctogram().value.toExponential(0)).to.equal("1e+27");
     });
 
-    it("should convert between metric units with fractions", () => {
+    it("should convert between SI units with fractions", () => {
         const grams = new Gram(36.823);
 
         expect(grams.to.Yottagram().value.toExponential(10)).to.equal("3.6823000000e-23");
@@ -132,9 +115,9 @@ describe("Metric System", () => {
         new Attogram(1),
         new Zeptogram(1),
         new Yoctogram(1),
-    ].map((unit: DerivedUnit) => {
+    ].map((unit: SiDerivedUnit) => {
         it(`should implement ${unit.constructor.name}`, () => {
-            expect(unit).to.be.an.instanceOf(DerivedUnit);
+            expect(unit).to.be.an.instanceOf(SiDerivedUnit);
             expect(unit).to.have.property("baseUnit");
             expect(unit.baseUnit).to.be.an.instanceOf(Kilogram);
             expect(unit.to).to.respondTo("Kilogram");
