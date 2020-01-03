@@ -43,6 +43,8 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
             expect(conversion.constructor.name).to.equal(toClass);
             expect(conversion.value.toFixed(13)).to.equal(conversion.value.toFixed(13));
             expect(conversion.value.toFixed(13)).to.equal(toValue);
+
+            expect(conversion.to[fromUnit.constructor.name]().value.toFixed(13)).to.equal("1.0000000000000");
         });
     });
 });
