@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {Pound} from "../../../../../lib/Units/Mass/Imperial/Pound";
+import {Pound} from "../../../../../../lib/Units/Mass/US/Avoirdupois/Pound";
 
 describe("Pound", () => {
     it("should convert pound to ounces and back", () => {

@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {BaseUnit} from "../../BaseUnit";
-import {Pound} from "../Imperial/Pound";
+import {Pound} from "../US/Avoirdupois/Pound";
 import {Attogram} from "./Attogram";
 import {Centigram} from "./Centigram";
 import {Decagram} from "./Decagram";
