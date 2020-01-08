@@ -1,8 +1,8 @@
-# Unit Converter
+# Measurement Toolkit
 
-An Object Oriented library to convert units, built in TypeScript.
+Perform math operations and conversions on object-oriented weights & measurements.
 
-[![Build Status](https://travis-ci.org/baspeeters/unit-converter.svg?branch=master)](https://travis-ci.org/baspeeters/unit-converter)  [![codecov](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/unit-converter)
+[![Build Status](https://travis-ci.org/baspeeters/measurement-toolkit.svg?branch=master)](https://travis-ci.org/baspeeters/measurement-toolkit)  [![codecov](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit)
 
 ## Usage
 
@@ -51,4 +51,4 @@ npm run test:coverage
 ```
 
 #### Coverage graph
-[![Code Coverage](https://codecov.io/gh/baspeeters/unit-converter/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/baspeeters/unit-converter)
+[![Code Coverage](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit)
