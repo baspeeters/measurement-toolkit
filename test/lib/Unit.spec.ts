@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {Megagram} from "../../lib/Units/Mass/SI";
+import {Megagram} from "../../lib/Units/Mass/SI/Megagram";
 import {Ounce} from "../../lib/Units/Mass/US/Avoirdupois/Ounce";
 
 describe("Unit", () => {

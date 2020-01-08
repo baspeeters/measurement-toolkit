@@ -7,7 +7,6 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {Gram, Kilogram, Milligram} from "../../../../../../lib/Units/Mass/SI";
 import {Dram} from "../../../../../../lib/Units/Mass/US/Avoirdupois/Dram";
 import {Grain} from "../../../../../../lib/Units/Mass/US/Avoirdupois/Grain";
 import {Hundredweight} from "../../../../../../lib/Units/Mass/US/Avoirdupois/Hundredweight";
