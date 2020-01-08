@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "Object Oriented Unit Converter using TypeScript",
   "scripts": {
-    "lint": "$(npm bin)/tslint -c tslint.json ./lib/**/*.ts ./test/**/*.ts",
+    "lint": "$(npm bin)/tslint -c tslint.json src/**/*.ts ./test/**/*.ts",
     "test": "$(npm bin)/mocha --require ts-node/register --recursive ./**/*.spec.ts",
     "test:coverage": "$(npm bin)/nyc --reporter=text --reporter=text-summary npm run test"
   },

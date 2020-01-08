@@ -7,10 +7,10 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {BaseUnit} from "../../lib/Units/BaseUnit";
-import {DerivedUnit} from "../../lib/Units/DerivedUnit";
-import {Gram} from "../../lib/Units/Mass/SI/Gram";
-import {Kilogram} from "../../lib/Units/Mass/SI/Kilogram";
+import {BaseUnit} from "../../src/Units/BaseUnit";
+import {DerivedUnit} from "../../src/Units/DerivedUnit";
+import {Gram} from "../../src/Units/Mass/SI/Gram";
+import {Kilogram} from "../../src/Units/Mass/SI/Kilogram";
 
 describe("DerivedUnit", () => {
     it("should be of the proper type", () => {
