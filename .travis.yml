@@ -24,7 +24,7 @@ jobs:
       script:
         - npm run build:clean
         - npm run build:npm
-        - npm init --scope $NPM_SCOPE --yes
+        - npm init --yes
       deploy:
         edge: true
         provider: npm
