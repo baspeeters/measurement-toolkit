@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "outDir": "../../lib",
+    "rootDir": "../../src",
+    "declaration": true,
+    "removeComments": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["es2015"]
+  },
+  "files": [
+    "../../src/main.ts"
+  ]
+}

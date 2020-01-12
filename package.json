@@ -1,15 +1,22 @@
 {
   "name": "measurement-toolkit",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Math and Conversion for Weight and Measurement Units",
+  "main": "lib/main.js",
+  "types": "./lib/main.d.ts",
   "scripts": {
     "lint": "$(npm bin)/tslint -c tslint.json src/**/*.ts ./test/**/*.ts",
     "test": "$(npm bin)/mocha --require ts-node/register --recursive ./**/*.spec.ts",
-    "test:coverage": "$(npm bin)/nyc --reporter=text --reporter=text-summary npm run test"
+    "test:coverage": "$(npm bin)/nyc --reporter=text --reporter=text-summary npm run test",
+    "build:clean": "test -d lib && rm -R lib || true",
+    "build:npm": "npm run build:clean && $(npm bin)/tsc --build ./build/npm/tsconfig.json"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/baspeeters/measurement-toolkit.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "avoirdupois",
