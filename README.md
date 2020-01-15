@@ -4,30 +4,34 @@ Perform math operations and conversions on object-oriented weights & measurement
 
 [![Build Status](https://travis-ci.org/baspeeters/measurement-toolkit.svg?branch=master)](https://travis-ci.org/baspeeters/measurement-toolkit)  [![codecov](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit)
 
-## Usage
+
+
+## Basic Usage
 
 ### Conversion
 
 ```javascript
-const grams = new Gram(127);
+import {Gram} from "measurement-toolkit";
 
-grams.to.Ounce();
+const grams = new Gram(245);
+const ounces = grams.to.Ounce();
 
 > Ounce {
->   value: 4.479793167596712
+>   value: 8.6421206776472
 > }
 ```
 
 ### Math operations
-
 ```javascript
-const tons = new Megagram(5.2);
-const ounces = new Ounce(50000);
+import {Kilogram, TroyOunce} from "measurement-toolkit";
 
-tons.subtract(ounces);
+const kgs = new Kilogram(5);
+const toz = new TroyOunce(3);
 
-> Megagram {
->   value: 3.78252384375
+kgs.subtract(toz);
+
+> Kilogram {
+>   value: 4.9066895696
 > }
 ```
 
