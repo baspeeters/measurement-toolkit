@@ -4,8 +4,6 @@ Perform math operations and conversions on object-oriented weights & measurement
 
 [![Build Status](https://travis-ci.org/baspeeters/measurement-toolkit.svg?branch=master)](https://travis-ci.org/baspeeters/measurement-toolkit)  [![codecov](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit)
 
-
-
 ## Basic Usage
 
 ### Conversion
@@ -33,6 +31,12 @@ kgs.subtract(toz);
 > Kilogram {
 >   value: 4.9066895696
 > }
+```
+
+## Installation
+
+```
+npm i measurement-toolkit
 ```
 
 ## Testing
