@@ -8,6 +8,8 @@
  */
 import {BaseUnit} from "../../BaseUnit";
 import {Pound} from "../US/Avoirdupois/Pound";
+import {TroyOunce as TroyOunce} from "../US/Troy/TroyOunce";
+import {TroyPound as TroyPound} from "../US/Troy/TroyPound";
 import {Attogram} from "./Attogram";
 import {Centigram} from "./Centigram";
 import {Decagram} from "./Decagram";
@@ -52,6 +54,8 @@ export class Kilogram extends BaseUnit {
         Exagram: () => new Exagram(this.value * Math.pow(10, -15)),
         Zettagram: () => new Zettagram(this.value * Math.pow(10, -18)),
         Yottagram: () => new Yottagram(this.value * Math.pow(10, -21)),
+        TroyOunce: (): TroyOunce => new TroyOunce(this.value / 0.0311034768),
+        TroyPound: (): TroyPound => new TroyPound(this.value / 0.3732417216),
     };
 
     protected converters = {

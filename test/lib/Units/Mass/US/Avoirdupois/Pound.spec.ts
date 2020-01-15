@@ -9,7 +9,7 @@
 import {expect} from "chai";
 import {Pound} from "../../../../../../src/Units/Mass/US/Avoirdupois/Pound";
 
-describe("Pound", () => {
+describe("Pound (Avoirdupois)", () => {
     it("should convert pound to ounces and back", () => {
         const unit = new Pound(163.123);
 
