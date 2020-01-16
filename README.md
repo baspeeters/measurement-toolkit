@@ -2,7 +2,7 @@
 
 Perform math operations and conversions on object-oriented weights & measurements.
 
-[![Build Status](https://travis-ci.org/baspeeters/measurement-toolkit.svg?branch=master)](https://travis-ci.org/baspeeters/measurement-toolkit)  [![codecov](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit)
+[![Build Status](https://travis-ci.org/baspeeters/measurement-toolkit.svg?branch=master)](https://travis-ci.org/baspeeters/measurement-toolkit)  [![codecov](https://codecov.io/gh/baspeeters/measurement-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/baspeeters/measurement-toolkit) [![Gitter](https://badges.gitter.im/measurement-toolkit/community.svg)](https://gitter.im/measurement-toolkit/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Basic Usage
 
