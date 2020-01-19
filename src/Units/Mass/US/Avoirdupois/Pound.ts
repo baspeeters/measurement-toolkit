@@ -13,6 +13,7 @@ import {Grain} from "./Grain";
 import {Hundredweight} from "./Hundredweight";
 import {Ounce} from "./Ounce";
 import {Quarter} from "./Quarter";
+import {Ton} from "./Ton";
 
 export class Pound extends BaseUnit {
     public derivedUnits = {
@@ -22,7 +23,7 @@ export class Pound extends BaseUnit {
         Ounce: () => new Ounce(this.value * 16),
         Quarter: () => new Quarter(this.value / 25),
         Hundredweight: () => new Hundredweight(this.value / 100),
-        Ton: () => new Ounce(this.value / 2000),
+        Ton: () => new Ton(this.value / 2000),
     };
 
     protected converters = {
