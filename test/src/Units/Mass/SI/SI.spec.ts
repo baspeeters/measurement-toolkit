@@ -23,7 +23,7 @@ import {Zeptogram} from "../../../../../src/Units/Mass/SI/Zeptogram";
 import {Zettagram} from "../../../../../src/Units/Mass/SI/Zettagram";
 
 /**
- * This file is part of Unit Converter
+ * This file is part of Measurement Toolkit
  *
  * (c) Bas Peeters <bas@peete.rs>
  *
