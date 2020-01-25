@@ -8,12 +8,12 @@
  */
 import {BaseUnit} from "../../../BaseUnit";
 import {Kilogram} from "../../SI/Kilogram";
+import {AvoirdupoisTon} from "./AvoirdupoisTon";
 import {Dram} from "./Dram";
 import {Grain} from "./Grain";
 import {Hundredweight} from "./Hundredweight";
 import {Ounce} from "./Ounce";
 import {Quarter} from "./Quarter";
-import {AvoirdupoisTon} from "./AvoirdupoisTon";
 
 export class Pound extends BaseUnit {
     public derivedUnits = {

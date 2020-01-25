@@ -7,13 +7,13 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
+import {AvoirdupoisTon} from "../../../../../../src/Units/Mass/US/Avoirdupois/AvoirdupoisTon";
 import {Dram} from "../../../../../../src/Units/Mass/US/Avoirdupois/Dram";
 import {Grain} from "../../../../../../src/Units/Mass/US/Avoirdupois/Grain";
 import {Hundredweight} from "../../../../../../src/Units/Mass/US/Avoirdupois/Hundredweight";
 import {Ounce} from "../../../../../../src/Units/Mass/US/Avoirdupois/Ounce";
 import {Pound} from "../../../../../../src/Units/Mass/US/Avoirdupois/Pound";
 import {Quarter} from "../../../../../../src/Units/Mass/US/Avoirdupois/Quarter";
-import {AvoirdupoisTon} from "../../../../../../src/Units/Mass/US/Avoirdupois/AvoirdupoisTon";
 import {UsDerivedUnit} from "../../../../../../src/Units/Mass/US/UsDerivedUnit";
 
 describe("US Customary System for Mass (Avoirdupois)", () => {
