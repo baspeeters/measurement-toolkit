@@ -9,6 +9,6 @@
 import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
-export class Ton extends UsDerivedUnit {
+export class AvoirdupoisTon extends UsDerivedUnit {
     public baseUnit = new Pound(this.value * 2000);
 }

@@ -28,7 +28,15 @@ describe("US Customary System for Mass (Troy)", () => {
         it(`should implement ${fromUnitName} => ${toClass}`, () => {
             expect(fromUnit.to).to.respondTo(toClass);
 
-            ["Dram", "Grain", "Hundredweight", "Ounce", "Pound", "Quarter", "Ton"].map((otherUnit: string) => {
+            [
+                "Dram",
+                "Grain",
+                "Hundredweight",
+                "Ounce",
+                "Pound",
+                "Quarter",
+                "AvoirdupoisTon",
+            ].map((otherUnit: string) => {
                 expect(fromUnit.to).to.respondTo(otherUnit);
             });
 

@@ -13,7 +13,7 @@ import {Hundredweight} from "../../../../../../src/Units/Mass/US/Avoirdupois/Hun
 import {Ounce} from "../../../../../../src/Units/Mass/US/Avoirdupois/Ounce";
 import {Pound} from "../../../../../../src/Units/Mass/US/Avoirdupois/Pound";
 import {Quarter} from "../../../../../../src/Units/Mass/US/Avoirdupois/Quarter";
-import {Ton} from "../../../../../../src/Units/Mass/US/Avoirdupois/Ton";
+import {AvoirdupoisTon} from "../../../../../../src/Units/Mass/US/Avoirdupois/AvoirdupoisTon";
 import {UsDerivedUnit} from "../../../../../../src/Units/Mass/US/UsDerivedUnit";
 
 describe("US Customary System for Mass (Avoirdupois)", () => {
@@ -23,7 +23,7 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
         [new Ounce(1), "Gram", "28.3495231250000"],
         [new Quarter(1), "Kilogram", "11.3398092500000"],
         [new Hundredweight(1), "Kilogram", "45.3592370000000"],
-        [new Ton(1), "Kilogram", "907.1847400000000"],
+        [new AvoirdupoisTon(1), "Kilogram", "907.1847400000000"],
     ].map((data: any) => {
         it(`should implement ${data[0].constructor.name}`, () => {
             const fromUnit = data[0];
@@ -33,7 +33,15 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
             expect(fromUnit).to.be.an.instanceOf(UsDerivedUnit);
             expect(fromUnit.to).to.respondTo(toClass);
 
-            ["Dram", "Grain", "Hundredweight", "Ounce", "Pound", "Quarter", "Ton"].map((otherUnit: string) => {
+            [
+                "Dram",
+                "Grain",
+                "Hundredweight",
+                "Ounce",
+                "Pound",
+                "Quarter",
+                "AvoirdupoisTon",
+            ].map((otherUnit: string) => {
                 expect(fromUnit.to).to.respondTo(otherUnit);
             });
 

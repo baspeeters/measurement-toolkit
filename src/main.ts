@@ -34,7 +34,7 @@ export {Hundredweight} from "./Units/Mass/US/Avoirdupois/Hundredweight";
 export {Ounce} from "./Units/Mass/US/Avoirdupois/Ounce";
 export {Pound} from "./Units/Mass/US/Avoirdupois/Pound";
 export {Quarter} from "./Units/Mass/US/Avoirdupois/Quarter";
-export {Ton} from "./Units/Mass/US/Avoirdupois/Ton";
+export {AvoirdupoisTon} from "./Units/Mass/US/Avoirdupois/AvoirdupoisTon";
 
 export {TroyOunce} from "./Units/Mass/US/Troy/TroyOunce";
 export {TroyPound} from "./Units/Mass/US/Troy/TroyPound";
