@@ -25,6 +25,7 @@ jobs:
         - npm run build:clean
         - npm run build:npm
         - npm init --yes
+        - npm publish --dry-run
       deploy:
         edge: true
         provider: npm
