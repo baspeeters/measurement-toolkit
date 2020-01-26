@@ -113,7 +113,42 @@ kgs.subtract(toz);
       <code>Yottameter</code>,
       <code>Zeptometer</code>,
       <code>Zettameter</code>
-   </td>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">Time</td>
+    <td colspan="2">SI</td>
+    <td>
+      <code>Kilosecond</code>,
+      <code>Attosecond</code>,
+      <code>Centisecond</code>,
+      <code>Decasecond</code>,
+      <code>Decisecond</code>,
+      <code>Exasecond</code>,
+      <code>Femtosecond</code>,
+      <code>Gigasecond</code>,
+      <code>Second</code>,
+      <code>Hectosecond</code>,
+      <code>Megasecond</code>,
+      <code>Microsecond</code>,
+      <code>Millisecond</code>,
+      <code>Nanosecond</code>,
+      <code>Petasecond</code>,
+      <code>Picosecond</code>,
+      <code>Terasecond</code>,
+      <code>Yoctosecond</code>,
+      <code>Yottasecond</code>,
+      <code>Zeptosecond</code>,
+      <code>Zettasecond</code>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">Other</td>
+    <td>
+      <code>Minute</code>,
+      <code>Hour</code>,
+      <code>Day</code>
+    </td>
   </tr>
 </table>
 

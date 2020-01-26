@@ -75,6 +75,38 @@ export {Zeptometer} from "./Units/Length/SI/Zeptometer";
 export {Zettameter} from "./Units/Length/SI/Zettameter";
 
 //
+// Time
+//
+
+// SI
+export {Kilosecond} from "./Units/Time/SI/Kilosecond";
+export {Attosecond} from "./Units/Time/SI/Attosecond";
+export {Centisecond} from "./Units/Time/SI/Centisecond";
+export {Decasecond} from "./Units/Time/SI/Decasecond";
+export {Decisecond} from "./Units/Time/SI/Decisecond";
+export {Exasecond} from "./Units/Time/SI/Exasecond";
+export {Femtosecond} from "./Units/Time/SI/Femtosecond";
+export {Gigasecond} from "./Units/Time/SI/Gigasecond";
+export {Second} from "./Units/Time/SI/Second";
+export {Hectosecond} from "./Units/Time/SI/Hectosecond";
+export {Megasecond} from "./Units/Time/SI/Megasecond";
+export {Microsecond} from "./Units/Time/SI/Microsecond";
+export {Millisecond} from "./Units/Time/SI/Millisecond";
+export {Nanosecond} from "./Units/Time/SI/Nanosecond";
+export {Petasecond} from "./Units/Time/SI/Petasecond";
+export {Picosecond} from "./Units/Time/SI/Picosecond";
+export {Terasecond} from "./Units/Time/SI/Terasecond";
+export {Yoctosecond} from "./Units/Time/SI/Yoctosecond";
+export {Yottasecond} from "./Units/Time/SI/Yottasecond";
+export {Zeptosecond} from "./Units/Time/SI/Zeptosecond";
+export {Zettasecond} from "./Units/Time/SI/Zettasecond";
+
+// Other (Approved for SI usage)
+export {Minute} from "./Units/Time/Other/Minute";
+export {Hour} from "./Units/Time/Other/Hour";
+export {Day} from "./Units/Time/Other/Day";
+
+//
 // Framework
 //
 export {Unit} from "./Units/Unit";
