@@ -35,17 +35,87 @@ kgs.subtract(toz);
 
 ## Unit support
 
-- Mass
-  - International System of Units (SI)
-    - Kilogram, Attogram, Centigram, Decagram, Decigram, Exagram, Femtogram, Gigagram, Gram, Hectogram, Megagram, Microgram, Milligram, Nanogram, Petagram, Picogram, Teragram, Yoctogram, Yottagram, Zeptogram, Zettagram
-  - US
-    - Avoirdupois
-      - Dram, Grain, Hundredweight, Ounce, Pound, Quarter, AvoirdupoisTon
-    - Troy
-      - TroyOunce, TroyPound
-- Length
-  - International System of Units (SI)
-    - Kilometer, Attometer, Centimeter, Decameter, Decimeter, Exameter, Femtometer, Gigameter, Meter, Hectometer, Megameter, Micrometer, Millimeter, Nanometer, Petameter, Picometer, Terameter, Yoctometer, Yottameter, Zeptometer, Zettameter
+<table>
+  <tr>
+    <th>Measure</th>
+    <th colspan="2">System</th>
+    <th>Units</th>
+  </tr>
+  <tr>
+    <td rowspan="3">Mass</td>
+    <td colspan="2">SI</td>
+    <td>
+      <code>Kilogram</code>,
+      <code>Attogram</code>,
+      <code>Centigram</code>,
+      <code>Decagram</code>,
+      <code>Decigram</code>,
+      <code>Exagram</code>,
+      <code>Femtogram</code>,
+      <code>Gigagram</code>,
+      <code>Gram</code>,
+      <code>Hectogram</code>,
+      <code>Megagram</code>,
+      <code>Microgram</code>,
+      <code>Milligram</code>,
+      <code>Nanogram</code>,
+      <code>Petagram</code>,
+      <code>Picogram</code>,
+      <code>Teragram</code>,
+      <code>Yoctogram</code>,
+      <code>Yottagram</code>,
+      <code>Zeptogram</code>,
+      <code>Zettagram</code>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">US</td>
+    <td>Avoirdupois</td>
+    <td>
+      <code>Dram</code>,
+      <code>Grain</code>,
+      <code>Hundredweight</code>,
+      <code>Ounce</code>,
+      <code>Pound</code>,
+      <code>Quarter</code>,
+      <code>AvoirdupoisTon</code>
+    </td>
+  </tr>
+  <tr>
+    <td>Troy</td>
+    <td>
+      <code>TroyOunce</code>,
+      <code>TroyPound</code>
+    </td>
+  </tr>
+  <tr>
+    <td>Length</td>
+    <td colspan="2">SI</td>
+    <td>
+      <code>Kilometer</code>,
+      <code>Attometer</code>,
+      <code>Centimeter</code>,
+      <code>Decameter</code>,
+      <code>Decimeter</code>,
+      <code>Exameter</code>,
+      <code>Femtometer</code>,
+      <code>Gigameter</code>,
+      <code>Meter</code>,
+      <code>Hectometer</code>,
+      <code>Megameter</code>,
+      <code>Micrometer</code>,
+      <code>Millimeter</code>,
+      <code>Nanometer</code>,
+      <code>Petameter</code>,
+      <code>Picometer</code>,
+      <code>Terameter</code>,
+      <code>Yoctometer</code>,
+      <code>Yottameter</code>,
+      <code>Zeptometer</code>,
+      <code>Zettameter</code>
+   </td>
+  </tr>
+</table>
 
 ## Installation
 
