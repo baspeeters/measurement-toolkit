@@ -31,7 +31,7 @@ import {Zettagram} from "../../../../../src/Units/Mass/SI/Zettagram";
  * file that was distributed with this source code.
  */
 describe("SI Units", () => {
-    it("should convert between SU units in whole numbers", () => {
+    it("should convert between SI units in whole numbers", () => {
         const grams = new Gram(1000);
 
         expect(grams.to.Yottagram().value.toExponential(0)).to.equal("1e-21");
