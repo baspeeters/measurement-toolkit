@@ -6,68 +6,30 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {DerivedUnit} from "./DerivedUnit";
+import {IUnit} from "./IUnit";
 
-export abstract class Unit {
-    public value: number;
-    public derivedUnits: {[key: string]: () => DerivedUnit} = {};
-    protected converters: {[key: string]: () => Unit} = {};
-
-    constructor(value: number) {
-        this.value = value;
-    }
+export abstract class Unit implements IUnit {
+    protected converters: {[key: string]: () => IUnit} = {};
 
     get to(): any {
         return this.getConverters();
     }
 
     public getConverters() {
-        for (const converter of Object.keys(this.converters)) {
-            this.converters[converter] = this.converters[converter].bind(this, this.value);
-        }
-
         return this.converters;
     }
 
-    public subtract(unit: Unit): this {
-        this.value -= unit.to[this.constructor.name]().value;
+    public abstract add(unit: IUnit): this;
 
-        return this;
-    }
+    public abstract divideBy(unit: IUnit): this;
 
-    public add(unit: Unit): this {
-        this.value += unit.to[this.constructor.name]().value;
+    public abstract dividedBy(unit: IUnit): this;
 
-        return this;
-    }
+    public abstract multiply(unit: IUnit): this;
 
-    public divideBy(unit: Unit): this {
-        this.value /= unit.to[this.constructor.name]().value;
+    public abstract percentageOf(unit: IUnit): this;
 
-        return this;
-    }
+    public abstract percentageOfThis(unit: IUnit): this;
 
-    public dividedBy(unit: Unit): this {
-        this.value = unit.to[this.constructor.name]().value / this.value;
-
-        return this;
-    }
-
-    public multiply(unit: Unit): this {
-        this.value *= unit.to[this.constructor.name]().value;
-
-        return this;
-    }
-
-    public percentageOf(unit: Unit): this {
-        this.value = (this.value / unit.to[this.constructor.name]().value) * 100;
-
-        return this;
-    }
-
-    public percentageOfThis(unit: Unit): this {
-        this.value = (unit.to[this.constructor.name]().value / this.value) * 100;
-
-        return this;
-    }
+    public abstract subtract(unit: IUnit): this;
 }

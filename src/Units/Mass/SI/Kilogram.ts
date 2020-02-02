@@ -6,7 +6,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {BaseUnit} from "../../BaseUnit";
+import {SimpleBaseUnit} from "../../SimpleBaseUnit";
+import {IUnitOfMass} from "../IUnitOfMass";
 import {Pound} from "../US/Avoirdupois/Pound";
 import {TroyOunce as TroyOunce} from "../US/Troy/TroyOunce";
 import {TroyPound as TroyPound} from "../US/Troy/TroyPound";
@@ -31,7 +32,7 @@ import {Yottagram} from "./Yottagram";
 import {Zeptogram} from "./Zeptogram";
 import {Zettagram} from "./Zettagram";
 
-export class Kilogram extends BaseUnit {
+export class Kilogram extends SimpleBaseUnit implements IUnitOfMass {
     public derivedUnits = {
         Yoctogram: () => new Yoctogram(this.value * Math.pow(10, 27)),
         Zeptogram: () => new Zeptogram(this.value * Math.pow(10, 24)),

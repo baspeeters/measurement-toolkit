@@ -6,10 +6,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {DerivedUnit} from "../../../DerivedUnit";
+import {SimpleDerivedUnit} from "../../../SimpleDerivedUnit";
 import {TroyPound} from "./TroyPound";
 
-export class TroyOunce extends DerivedUnit {
+export class TroyOunce extends SimpleDerivedUnit {
     public baseUnit: TroyPound = new TroyPound(this.value / 12);
 
     protected baseUnitConverter = {

@@ -6,7 +6,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {BaseUnit} from "../../BaseUnit";
+import {SimpleBaseUnit} from "../../SimpleBaseUnit";
+import {IUnitOfTime} from "../IUnitOfTime";
 import {Day} from "../Other/Day";
 import {Hour} from "../Other/Hour";
 import {Minute} from "../Other/Minute";
@@ -31,7 +32,7 @@ import {Yottasecond} from "./Yottasecond";
 import {Zeptosecond} from "./Zeptosecond";
 import {Zettasecond} from "./Zettasecond";
 
-export class Second extends BaseUnit {
+export class Second extends SimpleBaseUnit implements IUnitOfTime {
     public derivedUnits = {
         Yoctosecond: () => new Yoctosecond(this.value * Math.pow(10, 24)),
         Zeptosecond: () => new Zeptosecond(this.value * Math.pow(10, 21)),

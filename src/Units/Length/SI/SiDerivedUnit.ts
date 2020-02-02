@@ -6,14 +6,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {BaseUnit} from "../../BaseUnit";
-import {DerivedUnit} from "../../DerivedUnit";
-import {Unit} from "../../Unit";
+import {IBaseUnit} from "../../IBaseUnit";
+import {SimpleDerivedUnit} from "../../SimpleDerivedUnit";
+import {IUnitOfLength} from "../IUnitOfLength";
 
-export abstract class SiDerivedUnit extends DerivedUnit {
-    public abstract baseUnit: BaseUnit;
-
+export abstract class SiDerivedUnit extends SimpleDerivedUnit implements IUnitOfLength {
     protected baseUnitConverter = {
-        Meter: (): Unit => this.baseUnit,
+        Meter: (): IBaseUnit => this.baseUnit,
     };
 }

@@ -6,7 +6,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {BaseUnit} from "../../BaseUnit";
+import {SimpleBaseUnit} from "../../SimpleBaseUnit";
+import {IUnitOfLength} from "../IUnitOfLength";
 import {Attometer} from "./Attometer";
 import {Centimeter} from "./Centimeter";
 import {Decameter} from "./Decameter";
@@ -14,8 +15,8 @@ import {Decimeter} from "./Decimeter";
 import {Exameter} from "./Exameter";
 import {Femtometer} from "./Femtometer";
 import {Gigameter} from "./Gigameter";
-import {Kilometer} from "./Kilometer";
 import {Hectometer} from "./Hectometer";
+import {Kilometer} from "./Kilometer";
 import {Megameter} from "./Megameter";
 import {Micrometer} from "./Micrometer";
 import {Millimeter} from "./Millimeter";
@@ -28,7 +29,7 @@ import {Yottameter} from "./Yottameter";
 import {Zeptometer} from "./Zeptometer";
 import {Zettameter} from "./Zettameter";
 
-export class Meter extends BaseUnit {
+export class Meter extends SimpleBaseUnit implements IUnitOfLength {
     public derivedUnits = {
         Yoctometer: () => new Yoctometer(this.value * Math.pow(10, 24)),
         Zeptometer: () => new Zeptometer(this.value * Math.pow(10, 21)),
