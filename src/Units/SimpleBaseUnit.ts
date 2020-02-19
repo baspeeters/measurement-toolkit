@@ -9,12 +9,11 @@
 import {IBaseUnit} from "./IBaseUnit";
 import {ISimpleUnit} from "./ISimpleUnit";
 import {SimpleUnit} from "./SimpleUnit";
-import {Unit} from "./Unit";
 
 export abstract class SimpleBaseUnit extends SimpleUnit implements ISimpleUnit, IBaseUnit {
     public derivedUnits = {};
 
-    public getConverters(): { [key: string]: () => Unit } {
+    public getConverters(): { [key: string]: () => ISimpleUnit } {
         for (const converter of Object.keys(this.converters)) {
             const unit = this.converters[converter]();
 

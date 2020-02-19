@@ -9,6 +9,7 @@
 import {expect} from "chai";
 import {Megagram} from "../../src/Units/Mass/SI/Megagram";
 import {Ounce} from "../../src/Units/Mass/US/Avoirdupois/Ounce";
+import {UnitStub} from "../stubs/UnitStub";
 
 describe("Unit", () => {
     it("should add up another unit", () => {
@@ -79,5 +80,17 @@ describe("Unit", () => {
 
         expect(result).to.be.an.instanceOf(Megagram);
         expect(result.value.toFixed(9)).to.equal("27.259156851");
+    });
+
+    it("should have converters", () => {
+        const unit = new UnitStub();
+
+        expect(unit).to.respondTo("getConverters");
+
+        const converters = unit.getConverters();
+
+        expect(converters).to.be.an("object");
+        expect(converters).to.respondTo("OtherStub");
+        expect(converters.OtherStub()).to.be.an.instanceOf(UnitStub);
     });
 });

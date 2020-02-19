@@ -9,4 +9,6 @@
 import {ISimpleUnit} from "../ISimpleUnit";
 
 export interface IUnitOfMass extends ISimpleUnit {
+    to: { [key: string]: () => IUnitOfMass };
+    getConverters(): { [key: string]: () => IUnitOfMass };
 }

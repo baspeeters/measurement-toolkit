@@ -8,8 +8,6 @@
  */
 import {IUnit} from "./IUnit";
 
-export interface IBaseUnit extends IUnit {
-    derivedUnits: {[key: string]: () => IUnit};
-
-    getConverters(): {[key: string]: () => IUnit};
+export interface ICompoundUnit extends IUnit {
+    convert(unit: ICompoundUnit): ICompoundUnit;
 }

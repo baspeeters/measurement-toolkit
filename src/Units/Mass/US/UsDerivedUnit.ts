@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 import {IBaseUnit} from "../../IBaseUnit";
+import {SimpleBaseUnit} from "../../SimpleBaseUnit";
 import {SimpleDerivedUnit} from "../../SimpleDerivedUnit";
 import {IUnitOfMass} from "../IUnitOfMass";
-import {Pound} from "./Avoirdupois/Pound";
 
 export abstract class UsDerivedUnit extends SimpleDerivedUnit implements IUnitOfMass {
-    public abstract baseUnit: Pound;
+    public abstract baseUnit: SimpleBaseUnit;
 
     protected baseUnitConverter = {
         Pound: (): IBaseUnit => this.baseUnit,

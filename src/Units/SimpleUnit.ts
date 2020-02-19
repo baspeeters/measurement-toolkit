@@ -7,16 +7,21 @@
  * file that was distributed with this source code.
  */
 import {ISimpleUnit} from "./ISimpleUnit";
-import {IUnit} from "./IUnit";
 import {Unit} from "./Unit";
 
-export abstract class SimpleUnit extends Unit implements ISimpleUnit, IUnit {
+export abstract class SimpleUnit extends Unit implements ISimpleUnit {
     public value: number;
+
+    protected converters: {[key: string]: () => ISimpleUnit} = {};
 
     constructor(value: number) {
         super();
 
         this.value = value;
+    }
+
+    public getConverters(): {[key: string]: () => ISimpleUnit} {
+        return this.converters;
     }
 
     public subtract(unit: SimpleUnit): this {

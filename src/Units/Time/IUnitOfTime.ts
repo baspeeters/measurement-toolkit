@@ -9,4 +9,6 @@
 import {ISimpleUnit} from "../ISimpleUnit";
 
 export interface IUnitOfTime extends ISimpleUnit {
+    to: { [key: string]: () => IUnitOfTime };
+    getConverters(): { [key: string]: () => IUnitOfTime };
 }

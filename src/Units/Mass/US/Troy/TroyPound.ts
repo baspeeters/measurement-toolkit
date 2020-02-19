@@ -8,10 +8,11 @@
  */
 import {IBaseUnit} from "../../../IBaseUnit";
 import {SimpleDerivedUnit} from "../../../SimpleDerivedUnit";
+import {IUnitOfMass} from "../../IUnitOfMass";
 import {Grain} from "../Avoirdupois/Grain";
 import {TroyOunce} from "./TroyOunce";
 
-export class TroyPound extends SimpleDerivedUnit implements IBaseUnit {
+export class TroyPound extends SimpleDerivedUnit implements IBaseUnit, IUnitOfMass {
     public baseUnit: Grain = new Grain(this.value * 5760);
 
     public derivedUnits = {

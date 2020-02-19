@@ -13,13 +13,9 @@ export interface IUnit {
 
     divideBy(unit: IUnit): this;
 
-    dividedBy(unit: IUnit): this;
-
     multiply(unit: IUnit): this;
 
     percentageOf(unit: IUnit): this;
-
-    percentageOfThis(unit: IUnit): this;
 
     subtract(unit: IUnit): this;
 }

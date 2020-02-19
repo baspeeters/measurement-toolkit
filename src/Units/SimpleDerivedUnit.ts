@@ -9,14 +9,14 @@
 import {IBaseUnit} from "./IBaseUnit";
 import {IDerivedUnit} from "./IDerivedUnit";
 import {ISimpleUnit} from "./ISimpleUnit";
-import {IUnit} from "./IUnit";
+import {SimpleBaseUnit} from "./SimpleBaseUnit";
 import {SimpleUnit} from "./SimpleUnit";
 
 export abstract class SimpleDerivedUnit extends SimpleUnit implements ISimpleUnit, IDerivedUnit {
-    public abstract baseUnit: IBaseUnit;
+    public abstract baseUnit: SimpleBaseUnit;
     protected abstract baseUnitConverter: { [key: string]: () => IBaseUnit };
 
-    public getConverters(): { [key: string]: () => IUnit } {
+    public getConverters(): { [key: string]: () => ISimpleUnit } {
         this.converters = {
             ...super.getConverters(),
             ...this.baseUnit.derivedUnits,

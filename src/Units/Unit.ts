@@ -15,7 +15,7 @@ export abstract class Unit implements IUnit {
         return this.getConverters();
     }
 
-    public getConverters() {
+    public getConverters(): {[key: string]: () => IUnit} {
         return this.converters;
     }
 
@@ -23,13 +23,9 @@ export abstract class Unit implements IUnit {
 
     public abstract divideBy(unit: IUnit): this;
 
-    public abstract dividedBy(unit: IUnit): this;
-
     public abstract multiply(unit: IUnit): this;
 
     public abstract percentageOf(unit: IUnit): this;
-
-    public abstract percentageOfThis(unit: IUnit): this;
 
     public abstract subtract(unit: IUnit): this;
 }
