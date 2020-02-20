@@ -4,9 +4,17 @@
 
 ## Hierarchy
 
-  ↳ [BaseUnit](_baseunit_.baseunit.md)
+  ↳ [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md)
 
   ↳ **Second**
+
+## Implements
+
+* [IUnit](../interfaces/_iunit_.iunit.md)
+* [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
+* [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
+* [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md)
+* [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)
 
 ## Index
 
@@ -43,9 +51,9 @@
 
 \+ **new Second**(`value`: number): *[Second](_time_si_second_.second.md)*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[constructor](_derivedunit_.derivedunit.md#constructor)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L14)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L15)*
 
 **Parameters:**
 
@@ -61,9 +69,11 @@ Name | Type |
 
 • **value**: *number*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[value](_derivedunit_.derivedunit.md#value)*
+*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[value](../interfaces/_time_iunitoftime_.iunitoftime.md#value)*
 
-*Defined in [Unit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L12)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
+
+*Defined in [SimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L13)*
 
 ## Accessors
 
@@ -71,9 +81,9 @@ Name | Type |
 
 • **get to**(): *any*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[to](_derivedunit_.derivedunit.md#to)*
+*Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L20)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -81,17 +91,19 @@ Name | Type |
 
 ###  add
 
-▸ **add**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **add**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[add](_derivedunit_.derivedunit.md#add)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[add](_simpleunit_.simpleunit.md#add)*
 
-*Defined in [Unit.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L38)*
+*Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
+
+*Defined in [SimpleUnit.ts:33](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L33)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -99,17 +111,19 @@ ___
 
 ###  divideBy
 
-▸ **divideBy**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **divideBy**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[divideBy](_derivedunit_.derivedunit.md#divideby)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[divideBy](_simpleunit_.simpleunit.md#divideby)*
 
-*Defined in [Unit.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L44)*
+*Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
+
+*Defined in [SimpleUnit.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L39)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -117,17 +131,17 @@ ___
 
 ###  dividedBy
 
-▸ **dividedBy**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **dividedBy**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[dividedBy](_derivedunit_.derivedunit.md#dividedby)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[dividedBy](_simpleunit_.simpleunit.md#dividedby)*
 
-*Defined in [Unit.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L50)*
+*Defined in [SimpleUnit.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L45)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -137,33 +151,37 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Inherited from [BaseUnit](_baseunit_.baseunit.md).[getConverters](_baseunit_.baseunit.md#getconverters)*
+*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
 
-*Overrides [Unit](_unit_.unit.md).[getConverters](_unit_.unit.md#getconverters)*
+*Inherited from [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[getConverters](_simplebaseunit_.simplebaseunit.md#getconverters)*
 
-*Defined in [BaseUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/BaseUnit.ts#L14)*
+*Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
+
+*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleBaseUnit.ts#L16)*
 
 **Returns:** *object*
 
 * \[ **key**: *string*\]: function
 
-▸ (): *[Unit](_unit_.unit.md)*
+▸ (): *[ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)*
 
 ___
 
 ###  multiply
 
-▸ **multiply**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **multiply**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[multiply](_derivedunit_.derivedunit.md#multiply)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[multiply](_simpleunit_.simpleunit.md#multiply)*
 
-*Defined in [Unit.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L56)*
+*Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
+
+*Defined in [SimpleUnit.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L51)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -171,17 +189,19 @@ ___
 
 ###  percentageOf
 
-▸ **percentageOf**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **percentageOf**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[percentageOf](_derivedunit_.derivedunit.md#percentageof)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOf](_simpleunit_.simpleunit.md#percentageof)*
 
-*Defined in [Unit.ts:62](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L62)*
+*Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
+
+*Defined in [SimpleUnit.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L57)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -189,17 +209,17 @@ ___
 
 ###  percentageOfThis
 
-▸ **percentageOfThis**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **percentageOfThis**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[percentageOfThis](_derivedunit_.derivedunit.md#percentageofthis)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOfThis](_simpleunit_.simpleunit.md#percentageofthis)*
 
-*Defined in [Unit.ts:68](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L68)*
+*Defined in [SimpleUnit.ts:63](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L63)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -207,17 +227,19 @@ ___
 
 ###  subtract
 
-▸ **subtract**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **subtract**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[subtract](_derivedunit_.derivedunit.md#subtract)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[subtract](_simpleunit_.simpleunit.md#subtract)*
 
-*Defined in [Unit.ts:32](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L32)*
+*Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
+
+*Defined in [SimpleUnit.ts:27](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L27)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -227,15 +249,17 @@ Name | Type |
 
 ### ▪ **derivedUnits**: *object*
 
-*Overrides [BaseUnit](_baseunit_.baseunit.md).[derivedUnits](_baseunit_.baseunit.md#derivedunits)*
+*Implementation of [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md).[derivedUnits](../interfaces/_ibaseunit_.ibaseunit.md#derivedunits)*
 
-*Defined in [Time/SI/Second.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L35)*
+*Overrides [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[derivedUnits](_simplebaseunit_.simplebaseunit.md#derivedunits)*
+
+*Defined in [Time/SI/Second.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L36)*
 
 ###  Attosecond
 
 ▸ **Attosecond**(): *[Attosecond](_time_si_attosecond_.attosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L39)*
+*Defined in [Time/SI/Second.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L40)*
 
 **Returns:** *[Attosecond](_time_si_attosecond_.attosecond.md)‹›*
 
@@ -243,7 +267,7 @@ Name | Type |
 
 ▸ **Centisecond**(): *[Centisecond](_time_si_centisecond_.centisecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L45)*
+*Defined in [Time/SI/Second.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L46)*
 
 **Returns:** *[Centisecond](_time_si_centisecond_.centisecond.md)‹›*
 
@@ -251,7 +275,7 @@ Name | Type |
 
 ▸ **Day**(): *[Day](_time_other_day_.day.md)‹›*
 
-*Defined in [Time/SI/Second.ts:60](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L60)*
+*Defined in [Time/SI/Second.ts:61](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L61)*
 
 **Returns:** *[Day](_time_other_day_.day.md)‹›*
 
@@ -259,7 +283,7 @@ Name | Type |
 
 ▸ **Decasecond**(): *[Decasecond](_time_si_decasecond_.decasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L47)*
+*Defined in [Time/SI/Second.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L48)*
 
 **Returns:** *[Decasecond](_time_si_decasecond_.decasecond.md)‹›*
 
@@ -267,7 +291,7 @@ Name | Type |
 
 ▸ **Decisecond**(): *[Decisecond](_time_si_decisecond_.decisecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L46)*
+*Defined in [Time/SI/Second.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L47)*
 
 **Returns:** *[Decisecond](_time_si_decisecond_.decisecond.md)‹›*
 
@@ -275,7 +299,7 @@ Name | Type |
 
 ▸ **Exasecond**(): *[Exasecond](_time_si_exasecond_.exasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L54)*
+*Defined in [Time/SI/Second.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L55)*
 
 **Returns:** *[Exasecond](_time_si_exasecond_.exasecond.md)‹›*
 
@@ -283,7 +307,7 @@ Name | Type |
 
 ▸ **Femtosecond**(): *[Femtosecond](_time_si_femtosecond_.femtosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L40)*
+*Defined in [Time/SI/Second.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L41)*
 
 **Returns:** *[Femtosecond](_time_si_femtosecond_.femtosecond.md)‹›*
 
@@ -291,7 +315,7 @@ Name | Type |
 
 ▸ **Gigasecond**(): *[Gigasecond](_time_si_gigasecond_.gigasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L51)*
+*Defined in [Time/SI/Second.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L52)*
 
 **Returns:** *[Gigasecond](_time_si_gigasecond_.gigasecond.md)‹›*
 
@@ -299,7 +323,7 @@ Name | Type |
 
 ▸ **Hectosecond**(): *[Hectosecond](_time_si_hectosecond_.hectosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L48)*
+*Defined in [Time/SI/Second.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L49)*
 
 **Returns:** *[Hectosecond](_time_si_hectosecond_.hectosecond.md)‹›*
 
@@ -307,7 +331,7 @@ Name | Type |
 
 ▸ **Hour**(): *[Hour](_time_other_hour_.hour.md)‹›*
 
-*Defined in [Time/SI/Second.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L59)*
+*Defined in [Time/SI/Second.ts:60](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L60)*
 
 **Returns:** *[Hour](_time_other_hour_.hour.md)‹›*
 
@@ -315,7 +339,7 @@ Name | Type |
 
 ▸ **Kilosecond**(): *[Kilosecond](_time_si_kilosecond_.kilosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L49)*
+*Defined in [Time/SI/Second.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L50)*
 
 **Returns:** *[Kilosecond](_time_si_kilosecond_.kilosecond.md)‹›*
 
@@ -323,7 +347,7 @@ Name | Type |
 
 ▸ **Megasecond**(): *[Megasecond](_time_si_megasecond_.megasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L50)*
+*Defined in [Time/SI/Second.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L51)*
 
 **Returns:** *[Megasecond](_time_si_megasecond_.megasecond.md)‹›*
 
@@ -331,7 +355,7 @@ Name | Type |
 
 ▸ **Microsecond**(): *[Microsecond](_time_si_microsecond_.microsecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L43)*
+*Defined in [Time/SI/Second.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L44)*
 
 **Returns:** *[Microsecond](_time_si_microsecond_.microsecond.md)‹›*
 
@@ -339,7 +363,7 @@ Name | Type |
 
 ▸ **Millisecond**(): *[Millisecond](_time_si_millisecond_.millisecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L44)*
+*Defined in [Time/SI/Second.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L45)*
 
 **Returns:** *[Millisecond](_time_si_millisecond_.millisecond.md)‹›*
 
@@ -347,7 +371,7 @@ Name | Type |
 
 ▸ **Minute**(): *[Minute](_time_other_minute_.minute.md)‹›*
 
-*Defined in [Time/SI/Second.ts:58](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L58)*
+*Defined in [Time/SI/Second.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L59)*
 
 **Returns:** *[Minute](_time_other_minute_.minute.md)‹›*
 
@@ -355,7 +379,7 @@ Name | Type |
 
 ▸ **Nanosecond**(): *[Nanosecond](_time_si_nanosecond_.nanosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L42)*
+*Defined in [Time/SI/Second.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L43)*
 
 **Returns:** *[Nanosecond](_time_si_nanosecond_.nanosecond.md)‹›*
 
@@ -363,7 +387,7 @@ Name | Type |
 
 ▸ **Petasecond**(): *[Petasecond](_time_si_petasecond_.petasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L53)*
+*Defined in [Time/SI/Second.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L54)*
 
 **Returns:** *[Petasecond](_time_si_petasecond_.petasecond.md)‹›*
 
@@ -371,7 +395,7 @@ Name | Type |
 
 ▸ **Picosecond**(): *[Picosecond](_time_si_picosecond_.picosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L41)*
+*Defined in [Time/SI/Second.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L42)*
 
 **Returns:** *[Picosecond](_time_si_picosecond_.picosecond.md)‹›*
 
@@ -379,7 +403,7 @@ Name | Type |
 
 ▸ **Terasecond**(): *[Terasecond](_time_si_terasecond_.terasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L52)*
+*Defined in [Time/SI/Second.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L53)*
 
 **Returns:** *[Terasecond](_time_si_terasecond_.terasecond.md)‹›*
 
@@ -387,7 +411,7 @@ Name | Type |
 
 ▸ **Yoctosecond**(): *[Yoctosecond](_time_si_yoctosecond_.yoctosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L36)*
+*Defined in [Time/SI/Second.ts:37](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L37)*
 
 **Returns:** *[Yoctosecond](_time_si_yoctosecond_.yoctosecond.md)‹›*
 
@@ -395,7 +419,7 @@ Name | Type |
 
 ▸ **Yottasecond**(): *[Yottasecond](_time_si_yottasecond_.yottasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L56)*
+*Defined in [Time/SI/Second.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L57)*
 
 **Returns:** *[Yottasecond](_time_si_yottasecond_.yottasecond.md)‹›*
 
@@ -403,7 +427,7 @@ Name | Type |
 
 ▸ **Zeptosecond**(): *[Zeptosecond](_time_si_zeptosecond_.zeptosecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:37](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L37)*
+*Defined in [Time/SI/Second.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L38)*
 
 **Returns:** *[Zeptosecond](_time_si_zeptosecond_.zeptosecond.md)‹›*
 
@@ -411,6 +435,6 @@ Name | Type |
 
 ▸ **Zettasecond**(): *[Zettasecond](_time_si_zettasecond_.zettasecond.md)‹›*
 
-*Defined in [Time/SI/Second.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/Second.ts#L55)*
+*Defined in [Time/SI/Second.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/Second.ts#L56)*
 
 **Returns:** *[Zettasecond](_time_si_zettasecond_.zettasecond.md)‹›*

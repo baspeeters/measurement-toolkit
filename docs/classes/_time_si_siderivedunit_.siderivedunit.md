@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-  ↳ [DerivedUnit](_derivedunit_.derivedunit.md)
+  ↳ [SimpleDerivedUnit](_simplederivedunit_.simplederivedunit.md)
 
   ↳ **SiDerivedUnit**
 
@@ -54,6 +54,14 @@
 
   ↳ [Kilosecond](_time_si_kilosecond_.kilosecond.md)
 
+## Implements
+
+* [IUnit](../interfaces/_iunit_.iunit.md)
+* [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
+* [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
+* [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md)
+* [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)
+
 ## Index
 
 ### Constructors
@@ -63,7 +71,6 @@
 ### Properties
 
 * [baseUnit](_time_si_siderivedunit_.siderivedunit.md#abstract-baseunit)
-* [derivedUnits](_time_si_siderivedunit_.siderivedunit.md#derivedunits)
 * [value](_time_si_siderivedunit_.siderivedunit.md#value)
 
 ### Accessors
@@ -87,9 +94,9 @@
 
 \+ **new SiDerivedUnit**(`value`: number): *[SiDerivedUnit](_time_si_siderivedunit_.siderivedunit.md)*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[constructor](_derivedunit_.derivedunit.md#constructor)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L14)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L15)*
 
 **Parameters:**
 
@@ -103,27 +110,13 @@ Name | Type |
 
 ### `Abstract` baseUnit
 
-• **baseUnit**: *[BaseUnit](_baseunit_.baseunit.md)*
+• **baseUnit**: *[SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md)*
 
-*Overrides [DerivedUnit](_derivedunit_.derivedunit.md).[baseUnit](_derivedunit_.derivedunit.md#abstract-baseunit)*
+*Implementation of [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md).[baseUnit](../interfaces/_iderivedunit_.iderivedunit.md#baseunit)*
 
-*Defined in [Time/SI/SiDerivedUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Time/SI/SiDerivedUnit.ts#L14)*
+*Overrides [SimpleDerivedUnit](_simplederivedunit_.simplederivedunit.md).[baseUnit](_simplederivedunit_.simplederivedunit.md#abstract-baseunit)*
 
-___
-
-###  derivedUnits
-
-• **derivedUnits**: *object*
-
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[derivedUnits](_derivedunit_.derivedunit.md#derivedunits)*
-
-*Defined in [Unit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L13)*
-
-#### Type declaration:
-
-* \[ **key**: *string*\]: function
-
-▸ (): *[DerivedUnit](_derivedunit_.derivedunit.md)*
+*Defined in [Time/SI/SiDerivedUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Time/SI/SiDerivedUnit.ts#L15)*
 
 ___
 
@@ -131,9 +124,11 @@ ___
 
 • **value**: *number*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[value](_derivedunit_.derivedunit.md#value)*
+*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[value](../interfaces/_time_iunitoftime_.iunitoftime.md#value)*
 
-*Defined in [Unit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L12)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
+
+*Defined in [SimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L13)*
 
 ## Accessors
 
@@ -141,9 +136,9 @@ ___
 
 • **get to**(): *any*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[to](_derivedunit_.derivedunit.md#to)*
+*Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L20)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -151,17 +146,19 @@ ___
 
 ###  add
 
-▸ **add**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **add**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[add](_derivedunit_.derivedunit.md#add)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[add](_simpleunit_.simpleunit.md#add)*
 
-*Defined in [Unit.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L38)*
+*Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
+
+*Defined in [SimpleUnit.ts:33](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L33)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -169,17 +166,19 @@ ___
 
 ###  divideBy
 
-▸ **divideBy**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **divideBy**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[divideBy](_derivedunit_.derivedunit.md#divideby)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[divideBy](_simpleunit_.simpleunit.md#divideby)*
 
-*Defined in [Unit.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L44)*
+*Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
+
+*Defined in [SimpleUnit.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L39)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -187,17 +186,17 @@ ___
 
 ###  dividedBy
 
-▸ **dividedBy**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **dividedBy**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[dividedBy](_derivedunit_.derivedunit.md#dividedby)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[dividedBy](_simpleunit_.simpleunit.md#dividedby)*
 
-*Defined in [Unit.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L50)*
+*Defined in [SimpleUnit.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L45)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -207,33 +206,37 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[getConverters](_derivedunit_.derivedunit.md#getconverters)*
+*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
 
-*Overrides [Unit](_unit_.unit.md).[getConverters](_unit_.unit.md#getconverters)*
+*Inherited from [SimpleDerivedUnit](_simplederivedunit_.simplederivedunit.md).[getConverters](_simplederivedunit_.simplederivedunit.md#getconverters)*
 
-*Defined in [DerivedUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/DerivedUnit.ts#L16)*
+*Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
+
+*Defined in [SimpleDerivedUnit.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleDerivedUnit.ts#L19)*
 
 **Returns:** *object*
 
 * \[ **key**: *string*\]: function
 
-▸ (): *[Unit](_unit_.unit.md)*
+▸ (): *[ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)*
 
 ___
 
 ###  multiply
 
-▸ **multiply**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **multiply**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[multiply](_derivedunit_.derivedunit.md#multiply)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[multiply](_simpleunit_.simpleunit.md#multiply)*
 
-*Defined in [Unit.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L56)*
+*Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
+
+*Defined in [SimpleUnit.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L51)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -241,17 +244,19 @@ ___
 
 ###  percentageOf
 
-▸ **percentageOf**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **percentageOf**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[percentageOf](_derivedunit_.derivedunit.md#percentageof)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOf](_simpleunit_.simpleunit.md#percentageof)*
 
-*Defined in [Unit.ts:62](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L62)*
+*Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
+
+*Defined in [SimpleUnit.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L57)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -259,17 +264,17 @@ ___
 
 ###  percentageOfThis
 
-▸ **percentageOfThis**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **percentageOfThis**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[percentageOfThis](_derivedunit_.derivedunit.md#percentageofthis)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOfThis](_simpleunit_.simpleunit.md#percentageofthis)*
 
-*Defined in [Unit.ts:68](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L68)*
+*Defined in [SimpleUnit.ts:63](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L63)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
 
@@ -277,16 +282,18 @@ ___
 
 ###  subtract
 
-▸ **subtract**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **subtract**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Inherited from [DerivedUnit](_derivedunit_.derivedunit.md).[subtract](_derivedunit_.derivedunit.md#subtract)*
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[subtract](_simpleunit_.simpleunit.md#subtract)*
 
-*Defined in [Unit.ts:32](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L32)*
+*Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
+
+*Defined in [SimpleUnit.ts:27](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L27)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*

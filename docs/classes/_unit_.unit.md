@@ -6,20 +6,15 @@
 
 * **Unit**
 
-  ↳ [DerivedUnit](_derivedunit_.derivedunit.md)
+  ↳ [SimpleUnit](_simpleunit_.simpleunit.md)
 
-  ↳ [BaseUnit](_baseunit_.baseunit.md)
+  ↳ [Speed](_speed_.speed.md)
+
+## Implements
+
+* [IUnit](../interfaces/_iunit_.iunit.md)
 
 ## Index
-
-### Constructors
-
-* [constructor](_unit_.unit.md#constructor)
-
-### Properties
-
-* [derivedUnits](_unit_.unit.md#derivedunits)
-* [value](_unit_.unit.md#value)
 
 ### Accessors
 
@@ -27,52 +22,12 @@
 
 ### Methods
 
-* [add](_unit_.unit.md#add)
-* [divideBy](_unit_.unit.md#divideby)
-* [dividedBy](_unit_.unit.md#dividedby)
+* [add](_unit_.unit.md#abstract-add)
+* [divideBy](_unit_.unit.md#abstract-divideby)
 * [getConverters](_unit_.unit.md#getconverters)
-* [multiply](_unit_.unit.md#multiply)
-* [percentageOf](_unit_.unit.md#percentageof)
-* [percentageOfThis](_unit_.unit.md#percentageofthis)
-* [subtract](_unit_.unit.md#subtract)
-
-## Constructors
-
-###  constructor
-
-\+ **new Unit**(`value`: number): *[Unit](_unit_.unit.md)*
-
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L14)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`value` | number |
-
-**Returns:** *[Unit](_unit_.unit.md)*
-
-## Properties
-
-###  derivedUnits
-
-• **derivedUnits**: *object*
-
-*Defined in [Unit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L13)*
-
-#### Type declaration:
-
-* \[ **key**: *string*\]: function
-
-▸ (): *[DerivedUnit](_derivedunit_.derivedunit.md)*
-
-___
-
-###  value
-
-• **value**: *number*
-
-*Defined in [Unit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L12)*
+* [multiply](_unit_.unit.md#abstract-multiply)
+* [percentageOf](_unit_.unit.md#abstract-percentageof)
+* [subtract](_unit_.unit.md#abstract-subtract)
 
 ## Accessors
 
@@ -80,55 +35,43 @@ ___
 
 • **get to**(): *any*
 
-*Defined in [Unit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L20)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
 ## Methods
 
-###  add
+### `Abstract` add
 
-▸ **add**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **add**(`unit`: [IUnit](../interfaces/_iunit_.iunit.md)): *this*
 
-*Defined in [Unit.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L38)*
+*Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
+
+*Defined in [Unit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L22)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [IUnit](../interfaces/_iunit_.iunit.md) |
 
 **Returns:** *this*
 
 ___
 
-###  divideBy
+### `Abstract` divideBy
 
-▸ **divideBy**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **divideBy**(`unit`: [IUnit](../interfaces/_iunit_.iunit.md)): *this*
 
-*Defined in [Unit.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L44)*
+*Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`unit` | [Unit](_unit_.unit.md) |
-
-**Returns:** *this*
-
-___
-
-###  dividedBy
-
-▸ **dividedBy**(`unit`: [Unit](_unit_.unit.md)): *this*
-
-*Defined in [Unit.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L50)*
+*Defined in [Unit.ts:24](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L24)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [IUnit](../interfaces/_iunit_.iunit.md) |
 
 **Returns:** *this*
 
@@ -138,74 +81,64 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Defined in [Unit.ts:24](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L24)*
+*Defined in [Unit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L18)*
 
 **Returns:** *object*
 
 * \[ **key**: *string*\]: function
 
-▸ (): *[Unit](_unit_.unit.md)*
+▸ (): *[IUnit](../interfaces/_iunit_.iunit.md)*
 
 ___
 
-###  multiply
+### `Abstract` multiply
 
-▸ **multiply**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **multiply**(`unit`: [IUnit](../interfaces/_iunit_.iunit.md)): *this*
 
-*Defined in [Unit.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L56)*
+*Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
+
+*Defined in [Unit.ts:26](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L26)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [IUnit](../interfaces/_iunit_.iunit.md) |
 
 **Returns:** *this*
 
 ___
 
-###  percentageOf
+### `Abstract` percentageOf
 
-▸ **percentageOf**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **percentageOf**(`unit`: [IUnit](../interfaces/_iunit_.iunit.md)): *this*
 
-*Defined in [Unit.ts:62](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L62)*
+*Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
+
+*Defined in [Unit.ts:28](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L28)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [IUnit](../interfaces/_iunit_.iunit.md) |
 
 **Returns:** *this*
 
 ___
 
-###  percentageOfThis
+### `Abstract` subtract
 
-▸ **percentageOfThis**(`unit`: [Unit](_unit_.unit.md)): *this*
+▸ **subtract**(`unit`: [IUnit](../interfaces/_iunit_.iunit.md)): *this*
 
-*Defined in [Unit.ts:68](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L68)*
+*Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`unit` | [Unit](_unit_.unit.md) |
-
-**Returns:** *this*
-
-___
-
-###  subtract
-
-▸ **subtract**(`unit`: [Unit](_unit_.unit.md)): *this*
-
-*Defined in [Unit.ts:32](https://github.com/baspeeters/measurement-toolkit/blob/a0a75cb/src/Units/Unit.ts#L32)*
+*Defined in [Unit.ts:30](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L30)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`unit` | [Unit](_unit_.unit.md) |
+`unit` | [IUnit](../interfaces/_iunit_.iunit.md) |
 
 **Returns:** *this*

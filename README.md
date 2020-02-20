@@ -36,13 +36,11 @@ kgs.subtract(toz);
 ```
 
 #### API
-* [add()](./docs/classes/_unit_.unit.md#add)
-* [divideBy()](./docs/classes/_unit_.unit.md#divideby)
-* [dividedBy()](./docs/classes/_unit_.unit.md#dividedby)
-* [multiply()](./docs/classes/_unit_.unit.md#multiply)
-* [percentageOf()](./docs/classes/_unit_.unit.md#percentageof)
-* [percentageOfThis()](./docs/classes/_unit_.unit.md#percentageofthis)
-* [subtract()](./docs/classes/_unit_.unit.md#subtract)
+* [add()](./docs/interfaces/_iunit_.iunit.md#add)
+* [divideBy()](./docs/interfaces/_iunit_.iunit.md#divideby)
+* [multiply()](./docs/interfaces/_iunit_.iunit.md#multiply)
+* [percentageOf()](./docs/interfaces/_iunit_.iunit.md#percentageof)
+* [subtract()](./docs/interfaces/_iunit_.iunit.md#subtract)
 
 ## Unit support
 
