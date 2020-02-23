@@ -35,7 +35,7 @@
 
 • **get to**(): *any*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L14)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -47,7 +47,7 @@
 
 *Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-*Defined in [Unit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L22)*
+*Defined in [Unit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L22)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 *Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-*Defined in [Unit.ts:24](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L24)*
+*Defined in [Unit.ts:24](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L24)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Defined in [Unit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L18)*
+*Defined in [Unit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L18)*
 
 **Returns:** *object*
 
@@ -97,7 +97,7 @@ ___
 
 *Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-*Defined in [Unit.ts:26](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L26)*
+*Defined in [Unit.ts:26](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L26)*
 
 **Parameters:**
 
@@ -115,7 +115,7 @@ ___
 
 *Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-*Defined in [Unit.ts:28](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L28)*
+*Defined in [Unit.ts:28](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L28)*
 
 **Parameters:**
 
@@ -133,7 +133,7 @@ ___
 
 *Implementation of [IUnit](../interfaces/_iunit_.iunit.md)*
 
-*Defined in [Unit.ts:30](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L30)*
+*Defined in [Unit.ts:30](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L30)*
 
 **Parameters:**
 

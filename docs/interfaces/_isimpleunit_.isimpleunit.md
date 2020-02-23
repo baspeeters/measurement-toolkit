@@ -184,6 +184,7 @@
 
 ### Properties
 
+* [symbol](_isimpleunit_.isimpleunit.md#symbol)
 * [to](_isimpleunit_.isimpleunit.md#to)
 * [value](_isimpleunit_.isimpleunit.md#value)
 
@@ -195,8 +196,17 @@
 * [multiply](_isimpleunit_.isimpleunit.md#multiply)
 * [percentageOf](_isimpleunit_.isimpleunit.md#percentageof)
 * [subtract](_isimpleunit_.isimpleunit.md#subtract)
+* [toString](_isimpleunit_.isimpleunit.md#tostring)
 
 ## Properties
+
+###  symbol
+
+• **symbol**: *string*
+
+*Defined in [ISimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/ISimpleUnit.ts#L13)*
+
+___
 
 ###  to
 
@@ -204,7 +214,7 @@
 
 *Overrides [IUnit](_iunit_.iunit.md).[to](_iunit_.iunit.md#to)*
 
-*Defined in [ISimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/ISimpleUnit.ts#L13)*
+*Defined in [ISimpleUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/ISimpleUnit.ts#L14)*
 
 #### Type declaration:
 
@@ -218,7 +228,7 @@ ___
 
 • **value**: *number*
 
-*Defined in [ISimpleUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/ISimpleUnit.ts#L12)*
+*Defined in [ISimpleUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/ISimpleUnit.ts#L12)*
 
 ## Methods
 
@@ -228,7 +238,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[add](_iunit_.iunit.md#add)*
 
-*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L12)*
+*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L12)*
 
 **Parameters:**
 
@@ -246,7 +256,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[divideBy](_iunit_.iunit.md#divideby)*
 
-*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L14)*
+*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L14)*
 
 **Parameters:**
 
@@ -262,7 +272,7 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Defined in [ISimpleUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/ISimpleUnit.ts#L14)*
+*Defined in [ISimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/ISimpleUnit.ts#L15)*
 
 **Returns:** *object*
 
@@ -278,7 +288,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[multiply](_iunit_.iunit.md#multiply)*
 
-*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L16)*
+*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L16)*
 
 **Parameters:**
 
@@ -296,7 +306,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[percentageOf](_iunit_.iunit.md#percentageof)*
 
-*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L18)*
+*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L18)*
 
 **Parameters:**
 
@@ -314,7 +324,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[subtract](_iunit_.iunit.md#subtract)*
 
-*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L20)*
+*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L20)*
 
 **Parameters:**
 
@@ -323,3 +333,15 @@ Name | Type |
 `unit` | [IUnit](_iunit_.iunit.md) |
 
 **Returns:** *this*
+
+___
+
+###  toString
+
+▸ **toString**(): *string*
+
+*Inherited from [IUnit](_iunit_.iunit.md).[toString](_iunit_.iunit.md#tostring)*
+
+*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L22)*
+
+**Returns:** *string*
