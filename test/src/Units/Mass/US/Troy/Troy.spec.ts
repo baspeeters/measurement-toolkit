@@ -1,6 +1,3 @@
-import {expect} from "chai";
-import {TroyOunce, TroyPound} from "../../../../../../src/main";
-
 /**
  * This file is part of Measurement Toolkit
  *
@@ -9,6 +6,9 @@ import {TroyOunce, TroyPound} from "../../../../../../src/main";
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+import {expect} from "chai";
+import {TroyOunce, TroyPound} from "../../../../../../src/main";
+
 describe("US Customary System for Mass (Troy)", () => {
     [
         ["TroyPound", new TroyPound(1), "Gram", "373.2417216000000"],

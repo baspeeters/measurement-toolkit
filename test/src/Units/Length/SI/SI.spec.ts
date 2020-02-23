@@ -1,3 +1,11 @@
+/**
+ * This file is part of Measurement Toolkit
+ *
+ * (c) Bas Peeters <bas@peete.rs>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 import {expect} from "chai";
 import {Attometer} from "../../../../../src/Units/Length/SI/Attometer";
 import {Centimeter} from "../../../../../src/Units/Length/SI/Centimeter";
@@ -22,14 +30,6 @@ import {Yottameter} from "../../../../../src/Units/Length/SI/Yottameter";
 import {Zeptometer} from "../../../../../src/Units/Length/SI/Zeptometer";
 import {Zettameter} from "../../../../../src/Units/Length/SI/Zettameter";
 
-/**
- * This file is part of Measurement Toolkit
- *
- * (c) Bas Peeters <bas@peete.rs>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 describe("SI : Length", () => {
     it("should convert between SI units in whole numbers", () => {
         const kilometers = new Kilometer(1);

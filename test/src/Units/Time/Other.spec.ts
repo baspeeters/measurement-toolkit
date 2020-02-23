@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 import {expect} from "chai";
-import {Day} from "../../../../../src/Units/Time/Other/Day";
-import {Hour} from "../../../../../src/Units/Time/Other/Hour";
-import {Minute} from "../../../../../src/Units/Time/Other/Minute";
+import {Day} from "../../../../src/Units/Time/Other/Day";
+import {Hour} from "../../../../src/Units/Time/Other/Hour";
+import {Minute} from "../../../../src/Units/Time/Other/Minute";
 
 describe("SI Approved: Time", () => {
     it("should implement minute", () => {

@@ -1,3 +1,11 @@
+/**
+ * This file is part of Measurement Toolkit
+ *
+ * (c) Bas Peeters <bas@peete.rs>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 import {expect} from "chai";
 import {Attosecond} from "../../../../../src/Units/Time/SI/Attosecond";
 import {Centisecond} from "../../../../../src/Units/Time/SI/Centisecond";
@@ -22,14 +30,6 @@ import {Yottasecond} from "../../../../../src/Units/Time/SI/Yottasecond";
 import {Zeptosecond} from "../../../../../src/Units/Time/SI/Zeptosecond";
 import {Zettasecond} from "../../../../../src/Units/Time/SI/Zettasecond";
 
-/**
- * This file is part of Measurement Toolkit
- *
- * (c) Bas Peeters <bas@peete.rs>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 describe("SI : Time", () => {
     it("should convert between SI units in whole numbers", () => {
         const kiloseconds = new Kilosecond(1);

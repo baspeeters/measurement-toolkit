@@ -1,3 +1,11 @@
+/**
+ * This file is part of Measurement Toolkit
+ *
+ * (c) Bas Peeters <bas@peete.rs>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 import {expect} from "chai";
 import {Attogram} from "../../../../../src/Units/Mass/SI/Attogram";
 import {Centigram} from "../../../../../src/Units/Mass/SI/Centigram";
@@ -22,14 +30,6 @@ import {Yottagram} from "../../../../../src/Units/Mass/SI/Yottagram";
 import {Zeptogram} from "../../../../../src/Units/Mass/SI/Zeptogram";
 import {Zettagram} from "../../../../../src/Units/Mass/SI/Zettagram";
 
-/**
- * This file is part of Measurement Toolkit
- *
- * (c) Bas Peeters <bas@peete.rs>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 describe("SI: Mass", () => {
     it("should convert between SI units in whole numbers", () => {
         const grams = new Gram(1000);
