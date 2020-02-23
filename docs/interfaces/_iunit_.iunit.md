@@ -121,6 +121,7 @@ file that was distributed with this source code.
 * [multiply](_iunit_.iunit.md#multiply)
 * [percentageOf](_iunit_.iunit.md#percentageof)
 * [subtract](_iunit_.iunit.md#subtract)
+* [toString](_iunit_.iunit.md#tostring)
 
 ## Properties
 
@@ -128,7 +129,7 @@ file that was distributed with this source code.
 
 • **to**: *object*
 
-*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L10)*
+*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L10)*
 
 #### Type declaration:
 
@@ -142,7 +143,7 @@ file that was distributed with this source code.
 
 ▸ **add**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L12)*
+*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L12)*
 
 **Parameters:**
 
@@ -158,7 +159,7 @@ ___
 
 ▸ **divideBy**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L14)*
+*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L14)*
 
 **Parameters:**
 
@@ -174,7 +175,7 @@ ___
 
 ▸ **multiply**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L16)*
+*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L16)*
 
 **Parameters:**
 
@@ -190,7 +191,7 @@ ___
 
 ▸ **percentageOf**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L18)*
+*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L18)*
 
 **Parameters:**
 
@@ -206,7 +207,7 @@ ___
 
 ▸ **subtract**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/IUnit.ts#L20)*
+*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L20)*
 
 **Parameters:**
 
@@ -215,3 +216,13 @@ Name | Type |
 `unit` | [IUnit](_iunit_.iunit.md) |
 
 **Returns:** *this*
+
+___
+
+###  toString
+
+▸ **toString**(): *string*
+
+*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L22)*
+
+**Returns:** *string*

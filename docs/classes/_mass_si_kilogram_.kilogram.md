@@ -24,6 +24,7 @@
 
 ### Properties
 
+* [symbol](_mass_si_kilogram_.kilogram.md#symbol)
 * [value](_mass_si_kilogram_.kilogram.md#value)
 
 ### Accessors
@@ -40,6 +41,7 @@
 * [percentageOf](_mass_si_kilogram_.kilogram.md#percentageof)
 * [percentageOfThis](_mass_si_kilogram_.kilogram.md#percentageofthis)
 * [subtract](_mass_si_kilogram_.kilogram.md#subtract)
+* [toString](_mass_si_kilogram_.kilogram.md#tostring)
 
 ### Object literals
 
@@ -53,7 +55,7 @@
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
-*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L15)*
+*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L17)*
 
 **Parameters:**
 
@@ -65,6 +67,18 @@ Name | Type |
 
 ## Properties
 
+###  symbol
+
+• **symbol**: *string* = "kg"
+
+*Implementation of [IUnitOfMass](../interfaces/_mass_iunitofmass_.iunitofmass.md).[symbol](../interfaces/_mass_iunitofmass_.iunitofmass.md#symbol)*
+
+*Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[symbol](_simpleunit_.simpleunit.md#abstract-symbol)*
+
+*Defined in [Mass/SI/Kilogram.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L36)*
+
+___
+
 ###  value
 
 • **value**: *number*
@@ -73,7 +87,7 @@ Name | Type |
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
 
-*Defined in [SimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L13)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L15)*
 
 ## Accessors
 
@@ -83,7 +97,7 @@ Name | Type |
 
 *Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Unit.ts#L14)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -97,7 +111,7 @@ Name | Type |
 
 *Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
 
-*Defined in [SimpleUnit.ts:33](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L33)*
+*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L35)*
 
 **Parameters:**
 
@@ -117,7 +131,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
 
-*Defined in [SimpleUnit.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L39)*
+*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L41)*
 
 **Parameters:**
 
@@ -135,7 +149,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[dividedBy](_simpleunit_.simpleunit.md#dividedby)*
 
-*Defined in [SimpleUnit.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L45)*
+*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L47)*
 
 **Parameters:**
 
@@ -157,7 +171,7 @@ ___
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
 
-*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleBaseUnit.ts#L16)*
+*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleBaseUnit.ts#L16)*
 
 **Returns:** *object*
 
@@ -175,7 +189,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
 
-*Defined in [SimpleUnit.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L51)*
+*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L53)*
 
 **Parameters:**
 
@@ -195,7 +209,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
 
-*Defined in [SimpleUnit.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L57)*
+*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L59)*
 
 **Parameters:**
 
@@ -213,7 +227,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOfThis](_simpleunit_.simpleunit.md#percentageofthis)*
 
-*Defined in [SimpleUnit.ts:63](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L63)*
+*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L65)*
 
 **Parameters:**
 
@@ -233,7 +247,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
 
-*Defined in [SimpleUnit.ts:27](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/SimpleUnit.ts#L27)*
+*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L29)*
 
 **Parameters:**
 
@@ -242,6 +256,20 @@ Name | Type |
 `unit` | [SimpleUnit](_simpleunit_.simpleunit.md) |
 
 **Returns:** *this*
+
+___
+
+###  toString
+
+▸ **toString**(): *string*
+
+*Implementation of [IUnitOfMass](../interfaces/_mass_iunitofmass_.iunitofmass.md)*
+
+*Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[toString](_simpleunit_.simpleunit.md#tostring)*
+
+*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L71)*
+
+**Returns:** *string*
 
 ## Object literals
 
@@ -253,13 +281,13 @@ Name | Type |
 
 *Overrides [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[derivedUnits](_simplebaseunit_.simplebaseunit.md#derivedunits)*
 
-*Defined in [Mass/SI/Kilogram.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L36)*
+*Defined in [Mass/SI/Kilogram.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L38)*
 
 ###  Attogram
 
 ▸ **Attogram**(): *[Attogram](_mass_si_attogram_.attogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L40)*
+*Defined in [Mass/SI/Kilogram.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L42)*
 
 **Returns:** *[Attogram](_mass_si_attogram_.attogram.md)‹›*
 
@@ -267,7 +295,7 @@ Name | Type |
 
 ▸ **Centigram**(): *[Centigram](_mass_si_centigram_.centigram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L46)*
+*Defined in [Mass/SI/Kilogram.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L48)*
 
 **Returns:** *[Centigram](_mass_si_centigram_.centigram.md)‹›*
 
@@ -275,7 +303,7 @@ Name | Type |
 
 ▸ **Decagram**(): *[Decagram](_mass_si_decagram_.decagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L49)*
+*Defined in [Mass/SI/Kilogram.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L51)*
 
 **Returns:** *[Decagram](_mass_si_decagram_.decagram.md)‹›*
 
@@ -283,7 +311,7 @@ Name | Type |
 
 ▸ **Decigram**(): *[Decigram](_mass_si_decigram_.decigram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L47)*
+*Defined in [Mass/SI/Kilogram.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L49)*
 
 **Returns:** *[Decigram](_mass_si_decigram_.decigram.md)‹›*
 
@@ -291,7 +319,7 @@ Name | Type |
 
 ▸ **Exagram**(): *[Exagram](_mass_si_exagram_.exagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L55)*
+*Defined in [Mass/SI/Kilogram.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L57)*
 
 **Returns:** *[Exagram](_mass_si_exagram_.exagram.md)‹›*
 
@@ -299,7 +327,7 @@ Name | Type |
 
 ▸ **Femtogram**(): *[Femtogram](_mass_si_femtogram_.femtogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L41)*
+*Defined in [Mass/SI/Kilogram.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L43)*
 
 **Returns:** *[Femtogram](_mass_si_femtogram_.femtogram.md)‹›*
 
@@ -307,7 +335,7 @@ Name | Type |
 
 ▸ **Gigagram**(): *[Gigagram](_mass_si_gigagram_.gigagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L52)*
+*Defined in [Mass/SI/Kilogram.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L54)*
 
 **Returns:** *[Gigagram](_mass_si_gigagram_.gigagram.md)‹›*
 
@@ -315,7 +343,7 @@ Name | Type |
 
 ▸ **Gram**(): *[Gram](_mass_si_gram_.gram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L48)*
+*Defined in [Mass/SI/Kilogram.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L50)*
 
 **Returns:** *[Gram](_mass_si_gram_.gram.md)‹›*
 
@@ -323,7 +351,7 @@ Name | Type |
 
 ▸ **Hectogram**(): *[Hectogram](_mass_si_hectogram_.hectogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L50)*
+*Defined in [Mass/SI/Kilogram.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L52)*
 
 **Returns:** *[Hectogram](_mass_si_hectogram_.hectogram.md)‹›*
 
@@ -331,7 +359,7 @@ Name | Type |
 
 ▸ **Megagram**(): *[Megagram](_mass_si_megagram_.megagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L51)*
+*Defined in [Mass/SI/Kilogram.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L53)*
 
 **Returns:** *[Megagram](_mass_si_megagram_.megagram.md)‹›*
 
@@ -339,7 +367,7 @@ Name | Type |
 
 ▸ **Microgram**(): *[Microgram](_mass_si_microgram_.microgram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L44)*
+*Defined in [Mass/SI/Kilogram.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L46)*
 
 **Returns:** *[Microgram](_mass_si_microgram_.microgram.md)‹›*
 
@@ -347,7 +375,7 @@ Name | Type |
 
 ▸ **Milligram**(): *[Milligram](_mass_si_milligram_.milligram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L45)*
+*Defined in [Mass/SI/Kilogram.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L47)*
 
 **Returns:** *[Milligram](_mass_si_milligram_.milligram.md)‹›*
 
@@ -355,7 +383,7 @@ Name | Type |
 
 ▸ **Nanogram**(): *[Nanogram](_mass_si_nanogram_.nanogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L43)*
+*Defined in [Mass/SI/Kilogram.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L45)*
 
 **Returns:** *[Nanogram](_mass_si_nanogram_.nanogram.md)‹›*
 
@@ -363,7 +391,7 @@ Name | Type |
 
 ▸ **Petagram**(): *[Petagram](_mass_si_petagram_.petagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L54)*
+*Defined in [Mass/SI/Kilogram.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L56)*
 
 **Returns:** *[Petagram](_mass_si_petagram_.petagram.md)‹›*
 
@@ -371,7 +399,7 @@ Name | Type |
 
 ▸ **Picogram**(): *[Picogram](_mass_si_picogram_.picogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L42)*
+*Defined in [Mass/SI/Kilogram.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L44)*
 
 **Returns:** *[Picogram](_mass_si_picogram_.picogram.md)‹›*
 
@@ -379,7 +407,7 @@ Name | Type |
 
 ▸ **Teragram**(): *[Teragram](_mass_si_teragram_.teragram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L53)*
+*Defined in [Mass/SI/Kilogram.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L55)*
 
 **Returns:** *[Teragram](_mass_si_teragram_.teragram.md)‹›*
 
@@ -387,7 +415,7 @@ Name | Type |
 
 ▸ **TroyOunce**(): *[TroyOunce](_mass_us_troy_troyounce_.troyounce.md)*
 
-*Defined in [Mass/SI/Kilogram.ts:58](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L58)*
+*Defined in [Mass/SI/Kilogram.ts:60](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L60)*
 
 **Returns:** *[TroyOunce](_mass_us_troy_troyounce_.troyounce.md)*
 
@@ -395,7 +423,7 @@ Name | Type |
 
 ▸ **TroyPound**(): *[TroyPound](_mass_us_troy_troypound_.troypound.md)*
 
-*Defined in [Mass/SI/Kilogram.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L59)*
+*Defined in [Mass/SI/Kilogram.ts:61](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L61)*
 
 **Returns:** *[TroyPound](_mass_us_troy_troypound_.troypound.md)*
 
@@ -403,7 +431,7 @@ Name | Type |
 
 ▸ **Yoctogram**(): *[Yoctogram](_mass_si_yoctogram_.yoctogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:37](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L37)*
+*Defined in [Mass/SI/Kilogram.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L39)*
 
 **Returns:** *[Yoctogram](_mass_si_yoctogram_.yoctogram.md)‹›*
 
@@ -411,7 +439,7 @@ Name | Type |
 
 ▸ **Yottagram**(): *[Yottagram](_mass_si_yottagram_.yottagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L57)*
+*Defined in [Mass/SI/Kilogram.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L59)*
 
 **Returns:** *[Yottagram](_mass_si_yottagram_.yottagram.md)‹›*
 
@@ -419,7 +447,7 @@ Name | Type |
 
 ▸ **Zeptogram**(): *[Zeptogram](_mass_si_zeptogram_.zeptogram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L38)*
+*Defined in [Mass/SI/Kilogram.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L40)*
 
 **Returns:** *[Zeptogram](_mass_si_zeptogram_.zeptogram.md)‹›*
 
@@ -427,6 +455,6 @@ Name | Type |
 
 ▸ **Zettagram**(): *[Zettagram](_mass_si_zettagram_.zettagram.md)‹›*
 
-*Defined in [Mass/SI/Kilogram.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/094f000/src/Units/Mass/SI/Kilogram.ts#L56)*
+*Defined in [Mass/SI/Kilogram.ts:58](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/SI/Kilogram.ts#L58)*
 
 **Returns:** *[Zettagram](_mass_si_zettagram_.zettagram.md)‹›*
