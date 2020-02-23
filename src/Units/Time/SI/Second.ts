@@ -33,6 +33,8 @@ import {Zeptosecond} from "./Zeptosecond";
 import {Zettasecond} from "./Zettasecond";
 
 export class Second extends SimpleBaseUnit implements IUnitOfTime {
+    public symbol = "s";
+
     public derivedUnits = {
         Yoctosecond: () => new Yoctosecond(this.value * Math.pow(10, 24)),
         Zeptosecond: () => new Zeptosecond(this.value * Math.pow(10, 21)),

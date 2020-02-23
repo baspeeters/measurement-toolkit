@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Gigasecond extends SiDerivedUnit {
+    public symbol = "Gs";
     public baseUnit = new Second(this.value * Math.pow(10, 9));
 }

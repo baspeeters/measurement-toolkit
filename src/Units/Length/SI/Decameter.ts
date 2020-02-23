@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Decameter extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, 1));
+    public symbol = "dam";
 }

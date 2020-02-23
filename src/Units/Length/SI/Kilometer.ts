@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Kilometer extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, 3));
+    public symbol = "km";
 }

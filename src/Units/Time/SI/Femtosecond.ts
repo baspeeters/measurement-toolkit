@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Femtosecond extends SiDerivedUnit {
+    public symbol = "fs";
     public baseUnit = new Second(this.value * Math.pow(10, -15));
 }

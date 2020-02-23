@@ -13,6 +13,7 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class Grain extends UsDerivedUnit implements IBaseUnit, IDerivedUnit {
+    public symbol = "gr";
     public baseUnit = new Pound(this.value / 7000);
     public derivedUnits = {
         TroyPound: (): TroyPound => new TroyPound(this.value / 5760),

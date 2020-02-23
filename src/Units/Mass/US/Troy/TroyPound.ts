@@ -13,6 +13,8 @@ import {Grain} from "../Avoirdupois/Grain";
 import {TroyOunce} from "./TroyOunce";
 
 export class TroyPound extends SimpleDerivedUnit implements IBaseUnit, IUnitOfMass {
+    public symbol = "lb (t)";
+
     public baseUnit: Grain = new Grain(this.value * 5760);
 
     public derivedUnits = {

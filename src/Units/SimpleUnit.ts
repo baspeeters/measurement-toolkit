@@ -10,6 +10,8 @@ import {ISimpleUnit} from "./ISimpleUnit";
 import {Unit} from "./Unit";
 
 export abstract class SimpleUnit extends Unit implements ISimpleUnit {
+    public abstract symbol: string;
+
     public value: number;
 
     protected converters: {[key: string]: () => ISimpleUnit} = {};
@@ -64,5 +66,9 @@ export abstract class SimpleUnit extends Unit implements ISimpleUnit {
         this.value = (unit.to[this.constructor.name]().value / this.value) * 100;
 
         return this;
+    }
+
+    public toString(): string {
+        return `${this.value} ${this.symbol}`;
     }
 }

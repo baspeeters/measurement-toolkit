@@ -209,4 +209,69 @@ describe("SI : Length", () => {
         expect((new Yoctometer(value)).to.Meter().value.toExponential(2)).to.equal("7.25e-23");
         expect((new Meter(7.25e-23)).to.Yoctometer().value.toFixed()).to.equal(value.toFixed());
     });
+
+    it("Should have symbols", () => {
+        const yottameter = new Yottameter(19);
+        expect(yottameter.toString()).to.equal("19 Ym");
+
+        const zettameter = new Zettameter(17);
+        expect(zettameter.toString()).to.equal("17 Zm");
+
+        const exameter = new Exameter(15);
+        expect(exameter.toString()).to.equal("15 Em");
+
+        const petameter = new Petameter(13);
+        expect(petameter.toString()).to.equal("13 Pm");
+
+        const terameter = new Terameter(11);
+        expect(terameter.toString()).to.equal("11 Tm");
+
+        const gigameter = new Gigameter(9);
+        expect(gigameter.toString()).to.equal("9 Gm");
+
+        const megameter = new Megameter(7);
+        expect(megameter.toString()).to.equal("7 Mm");
+
+        const kilometer = new Kilometer(6);
+        expect(kilometer.toString()).to.equal("6 km");
+
+        const hectometer = new Hectometer(4);
+        expect(hectometer.toString()).to.equal("4 hm");
+
+        const decameter = new Decameter(2);
+        expect(decameter.toString()).to.equal("2 dam");
+
+        const meter = new Meter(18);
+        expect(meter.toString()).to.equal("18 m");
+
+        const decimeter = new Decimeter(1);
+        expect(decimeter.toString()).to.equal("1 dm");
+
+        const centimeter = new Centimeter(3);
+        expect(centimeter.toString()).to.equal("3 cm");
+
+        const millimeter = new Millimeter(5);
+        expect(millimeter.toString()).to.equal("5 mm");
+
+        const micrometer = new Micrometer(7);
+        expect(micrometer.toString()).to.equal("7 µm");
+
+        const nanometer = new Nanometer(8);
+        expect(nanometer.toString()).to.equal("8 nm");
+
+        const picometer = new Picometer(10);
+        expect(picometer.toString()).to.equal("10 pm");
+
+        const femtometer = new Femtometer(12);
+        expect(femtometer.toString()).to.equal("12 fm");
+
+        const attometer = new Attometer(14);
+        expect(attometer.toString()).to.equal("14 am");
+
+        const zeptometer = new Zeptometer(16);
+        expect(zeptometer.toString()).to.equal("16 zm");
+
+        const yoctometer = new Yoctometer(18);
+        expect(yoctometer.toString()).to.equal("18 ym");
+    });
 });

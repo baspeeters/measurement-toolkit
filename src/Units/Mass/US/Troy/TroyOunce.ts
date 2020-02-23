@@ -10,6 +10,8 @@ import {SimpleDerivedUnit} from "../../../SimpleDerivedUnit";
 import {TroyPound} from "./TroyPound";
 
 export class TroyOunce extends SimpleDerivedUnit {
+    public symbol = "oz (t)";
+
     public baseUnit: TroyPound = new TroyPound(this.value / 12);
 
     protected baseUnitConverter = {

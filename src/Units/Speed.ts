@@ -118,6 +118,12 @@ export class Speed extends Unit implements ICompoundUnit {
         return this;
     }
 
+    public toString(): string {
+        return this.time.value === 1
+            ? `${this.distance.toString()}/${this.time.symbol}`
+            : `${this.distance.toString()}/${this.time.value}${this.time.symbol}`;
+    }
+
     private syncTypes(unit: Speed): Speed {
         const distance = unit.distance.to[this.distance.constructor.name]();
         const time = unit.time.to[this.time.constructor.name]();

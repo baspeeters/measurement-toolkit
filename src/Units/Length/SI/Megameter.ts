@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Megameter extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, 6));
+    public symbol = "Mm";
 }

@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Kilosecond extends SiDerivedUnit {
+    public symbol = "ks";
     public baseUnit = new Second(this.value * Math.pow(10, 3));
 }

@@ -17,6 +17,8 @@ import {Ounce} from "./Ounce";
 import {Quarter} from "./Quarter";
 
 export class Pound extends SimpleBaseUnit implements IBaseUnit {
+    public symbol = "lb";
+
     public derivedUnits = {
         Grain: () => new Grain(this.value * 7000),
         // tslint:disable-next-line:object-literal-sort-keys

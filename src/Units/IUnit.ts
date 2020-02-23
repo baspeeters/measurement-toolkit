@@ -18,4 +18,6 @@ export interface IUnit {
     percentageOf(unit: IUnit): this;
 
     subtract(unit: IUnit): this;
+
+    toString(): string;
 }

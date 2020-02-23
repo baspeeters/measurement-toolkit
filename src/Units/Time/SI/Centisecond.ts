@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Centisecond extends SiDerivedUnit {
+    public symbol = "cs";
     public baseUnit = new Second(this.value * Math.pow(10, -2));
 }

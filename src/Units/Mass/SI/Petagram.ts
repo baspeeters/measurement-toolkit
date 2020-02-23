@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Petagram extends SiDerivedUnit {
+    public symbol = "Pg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, 12));
 }

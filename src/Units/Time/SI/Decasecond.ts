@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Decasecond extends SiDerivedUnit {
+    public symbol = "das";
     public baseUnit = new Second(this.value * Math.pow(10, 1));
 }

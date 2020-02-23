@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Petameter extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, 15));
+    public symbol = "Pm";
 }

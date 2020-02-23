@@ -30,6 +30,8 @@ import {Zeptometer} from "./Zeptometer";
 import {Zettameter} from "./Zettameter";
 
 export class Meter extends SimpleBaseUnit implements IUnitOfLength {
+    public symbol = "m";
+
     public derivedUnits = {
         Yoctometer: () => new Yoctometer(this.value * Math.pow(10, 24)),
         Zeptometer: () => new Zeptometer(this.value * Math.pow(10, 21)),

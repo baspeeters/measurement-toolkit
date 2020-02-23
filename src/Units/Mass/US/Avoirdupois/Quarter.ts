@@ -10,5 +10,6 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class Quarter extends UsDerivedUnit {
+    public symbol = "qr";
     public baseUnit = new Pound(this.value * 25);
 }

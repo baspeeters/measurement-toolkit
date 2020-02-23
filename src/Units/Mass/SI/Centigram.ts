@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Centigram extends SiDerivedUnit {
+    public symbol = "cg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -5));
 }

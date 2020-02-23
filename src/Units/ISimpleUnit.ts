@@ -10,6 +10,7 @@ import {IUnit} from "./IUnit";
 
 export interface ISimpleUnit extends IUnit {
     value: number;
+    symbol: string;
     to: { [key: string]: () => ISimpleUnit };
     getConverters(): { [key: string]: () => ISimpleUnit };
 }

@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Picogram extends SiDerivedUnit {
+    public symbol = "pg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -15));
 }

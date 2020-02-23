@@ -10,5 +10,6 @@ import {Second} from "../SI/Second";
 import {SiDerivedUnit} from "../SI/SiDerivedUnit";
 
 export class Day extends SiDerivedUnit {
+    public symbol = "d";
     public baseUnit = new Second(this.value * 86400);
 }

@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Zettagram extends SiDerivedUnit {
+    public symbol = "Zg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, 18));
 }

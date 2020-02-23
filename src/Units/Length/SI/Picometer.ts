@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Picometer extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, -12));
+    public symbol = "pm";
 }

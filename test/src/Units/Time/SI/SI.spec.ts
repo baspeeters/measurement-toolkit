@@ -209,4 +209,69 @@ describe("SI : Time", () => {
         expect((new Yoctosecond(value)).to.Second().value.toExponential(2)).to.equal("7.25e-23");
         expect((new Second(7.25e-23)).to.Yoctosecond().value.toFixed()).to.equal(value.toFixed());
     });
+
+    it("Should have symbols", () => {
+        const yottasecond = new Yottasecond(19);
+        expect(yottasecond.toString()).to.equal("19 Ys");
+
+        const zettasecond = new Zettasecond(17);
+        expect(zettasecond.toString()).to.equal("17 Zs");
+
+        const exasecond = new Exasecond(15);
+        expect(exasecond.toString()).to.equal("15 Es");
+
+        const petasecond = new Petasecond(13);
+        expect(petasecond.toString()).to.equal("13 Ps");
+
+        const terasecond = new Terasecond(11);
+        expect(terasecond.toString()).to.equal("11 Ts");
+
+        const gigasecond = new Gigasecond(9);
+        expect(gigasecond.toString()).to.equal("9 Gs");
+
+        const megasecond = new Megasecond(7);
+        expect(megasecond.toString()).to.equal("7 Ms");
+
+        const kilosecond = new Kilosecond(6);
+        expect(kilosecond.toString()).to.equal("6 ks");
+
+        const hectosecond = new Hectosecond(4);
+        expect(hectosecond.toString()).to.equal("4 hs");
+
+        const decasecond = new Decasecond(2);
+        expect(decasecond.toString()).to.equal("2 das");
+
+        const second = new Second(18);
+        expect(second.toString()).to.equal("18 s");
+
+        const decisecond = new Decisecond(1);
+        expect(decisecond.toString()).to.equal("1 ds");
+
+        const centisecond = new Centisecond(3);
+        expect(centisecond.toString()).to.equal("3 cs");
+
+        const millisecond = new Millisecond(5);
+        expect(millisecond.toString()).to.equal("5 ms");
+
+        const microsecond = new Microsecond(7);
+        expect(microsecond.toString()).to.equal("7 µs");
+
+        const nanosecond = new Nanosecond(8);
+        expect(nanosecond.toString()).to.equal("8 ns");
+
+        const picosecond = new Picosecond(10);
+        expect(picosecond.toString()).to.equal("10 ps");
+
+        const femtosecond = new Femtosecond(12);
+        expect(femtosecond.toString()).to.equal("12 fs");
+
+        const attosecond = new Attosecond(14);
+        expect(attosecond.toString()).to.equal("14 as");
+
+        const zeptosecond = new Zeptosecond(16);
+        expect(zeptosecond.toString()).to.equal("16 zs");
+
+        const yoctosecond = new Yoctosecond(18);
+        expect(yoctosecond.toString()).to.equal("18 ys");
+    });
 });

@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Nanosecond extends SiDerivedUnit {
+    public symbol = "ns";
     public baseUnit = new Second(this.value * Math.pow(10, -9));
 }

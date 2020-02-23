@@ -33,6 +33,8 @@ import {Zeptogram} from "./Zeptogram";
 import {Zettagram} from "./Zettagram";
 
 export class Kilogram extends SimpleBaseUnit implements IUnitOfMass {
+    public symbol = "kg";
+
     public derivedUnits = {
         Yoctogram: () => new Yoctogram(this.value * Math.pow(10, 27)),
         Zeptogram: () => new Zeptogram(this.value * Math.pow(10, 24)),

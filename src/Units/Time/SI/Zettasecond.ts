@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Zettasecond extends SiDerivedUnit {
+    public symbol = "Zs";
     public baseUnit = new Second(this.value * Math.pow(10, 21));
 }

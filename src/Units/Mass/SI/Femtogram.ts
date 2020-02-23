@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Femtogram extends SiDerivedUnit {
+    public symbol = "fg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -18));
 }

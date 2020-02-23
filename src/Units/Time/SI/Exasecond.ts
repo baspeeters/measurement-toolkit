@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Exasecond extends SiDerivedUnit {
+    public symbol = "Es";
     public baseUnit = new Second(this.value * Math.pow(10, 18));
 }

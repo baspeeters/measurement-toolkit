@@ -54,4 +54,27 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
             expect(conversion.to[fromUnit.constructor.name]().value.toFixed(13)).to.equal("1.0000000000000");
         });
     });
+
+    it("Should have symbols", () => {
+        const dram = new Dram(6);
+        expect(dram.toString()).to.equal("6 dr");
+
+        const grain = new Grain(4);
+        expect(grain.toString()).to.equal("4 gr");
+
+        const hundredweight = new Hundredweight(2);
+        expect(hundredweight.toString()).to.equal("2 cwt");
+
+        const ounce = new Ounce(18);
+        expect(ounce.toString()).to.equal("18 oz");
+
+        const pound = new Pound(1);
+        expect(pound.toString()).to.equal("1 lb");
+
+        const quarter = new Quarter(3);
+        expect(quarter.toString()).to.equal("3 qr");
+
+        const avoirdupoisTon = new AvoirdupoisTon(5);
+        expect(avoirdupoisTon.toString()).to.equal("5 t");
+    });
 });

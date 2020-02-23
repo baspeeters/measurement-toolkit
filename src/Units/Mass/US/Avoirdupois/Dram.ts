@@ -10,5 +10,6 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class Dram extends UsDerivedUnit {
+    public symbol = "dr";
     public baseUnit = new Pound(this.value / 256);
 }

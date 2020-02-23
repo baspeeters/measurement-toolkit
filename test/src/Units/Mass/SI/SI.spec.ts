@@ -209,4 +209,69 @@ describe("SI: Mass", () => {
         expect((new Yoctogram(value)).to.Kilogram().value.toExponential(2)).to.equal("7.25e-23");
         expect((new Kilogram(7.25e-23)).to.Yoctogram().value.toFixed()).to.equal(value.toFixed());
     });
+
+    it("Should have symbols", () => {
+        const yottagram = new Yottagram(19);
+        expect(yottagram.toString()).to.equal("19 Yg");
+
+        const zettagram = new Zettagram(17);
+        expect(zettagram.toString()).to.equal("17 Zg");
+
+        const exagram = new Exagram(15);
+        expect(exagram.toString()).to.equal("15 Eg");
+
+        const petagram = new Petagram(13);
+        expect(petagram.toString()).to.equal("13 Pg");
+
+        const teragram = new Teragram(11);
+        expect(teragram.toString()).to.equal("11 Tg");
+
+        const gigagram = new Gigagram(9);
+        expect(gigagram.toString()).to.equal("9 Gg");
+
+        const megagram = new Megagram(7);
+        expect(megagram.toString()).to.equal("7 Mg");
+
+        const kilogram = new Kilogram(6);
+        expect(kilogram.toString()).to.equal("6 kg");
+
+        const hectogram = new Hectogram(4);
+        expect(hectogram.toString()).to.equal("4 hg");
+
+        const decagram = new Decagram(2);
+        expect(decagram.toString()).to.equal("2 dag");
+
+        const gram = new Gram(18);
+        expect(gram.toString()).to.equal("18 g");
+
+        const decigram = new Decigram(1);
+        expect(decigram.toString()).to.equal("1 dg");
+
+        const centigram = new Centigram(3);
+        expect(centigram.toString()).to.equal("3 cg");
+
+        const milligram = new Milligram(5);
+        expect(milligram.toString()).to.equal("5 mg");
+
+        const microgram = new Microgram(7);
+        expect(microgram.toString()).to.equal("7 µg");
+
+        const nanogram = new Nanogram(8);
+        expect(nanogram.toString()).to.equal("8 ng");
+
+        const picogram = new Picogram(10);
+        expect(picogram.toString()).to.equal("10 pg");
+
+        const femtogram = new Femtogram(12);
+        expect(femtogram.toString()).to.equal("12 fg");
+
+        const attogram = new Attogram(14);
+        expect(attogram.toString()).to.equal("14 ag");
+
+        const zeptogram = new Zeptogram(16);
+        expect(zeptogram.toString()).to.equal("16 zg");
+
+        const yoctogram = new Yoctogram(18);
+        expect(yoctogram.toString()).to.equal("18 yg");
+    });
 });

@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Yoctosecond extends SiDerivedUnit {
+    public symbol = "ys";
     public baseUnit = new Second(this.value * Math.pow(10, -24));
 }

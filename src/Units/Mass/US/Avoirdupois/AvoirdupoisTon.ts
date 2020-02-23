@@ -10,5 +10,6 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class AvoirdupoisTon extends UsDerivedUnit {
+    public symbol = "t";
     public baseUnit = new Pound(this.value * 2000);
 }

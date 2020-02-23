@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Hectosecond extends SiDerivedUnit {
+    public symbol = "hs";
     public baseUnit = new Second(this.value * Math.pow(10, 2));
 }

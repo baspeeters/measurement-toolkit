@@ -11,4 +11,5 @@ import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Yoctometer extends SiDerivedUnit {
     public baseUnit = new Meter(this.value * Math.pow(10, -24));
+    public symbol = "ym";
 }

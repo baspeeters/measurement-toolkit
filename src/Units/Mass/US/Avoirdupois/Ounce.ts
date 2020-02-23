@@ -10,5 +10,6 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class Ounce extends UsDerivedUnit {
+    public symbol = "oz";
     public baseUnit = new Pound(this.value / 16);
 }

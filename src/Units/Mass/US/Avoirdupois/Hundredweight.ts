@@ -10,5 +10,6 @@ import {UsDerivedUnit} from "../UsDerivedUnit";
 import {Pound} from "./Pound";
 
 export class Hundredweight extends UsDerivedUnit {
+    public symbol = "cwt";
     public baseUnit = new Pound(this.value * 100);
 }

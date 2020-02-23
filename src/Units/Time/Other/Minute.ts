@@ -10,5 +10,6 @@ import {Second} from "../SI/Second";
 import {SiDerivedUnit} from "../SI/SiDerivedUnit";
 
 export class Minute extends SiDerivedUnit {
+    public symbol = "min";
     public baseUnit = new Second(this.value * 60);
 }

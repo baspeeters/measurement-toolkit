@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Attogram extends SiDerivedUnit {
+    public symbol = "ag";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -21));
 }

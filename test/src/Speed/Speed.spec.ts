@@ -155,4 +155,12 @@ describe("Speed", () => {
         expect(percentageOfThis.distance.value.toPrecision(10)).to.equal("48.91304348");
         expect(percentageOfThis.time.value).to.equal(1);
     });
+
+    it("Should have symbols", () => {
+        const meterPerSecond = new Speed(new Meter(12), new Second(1));
+        expect(meterPerSecond.toString()).to.equal("12 m/s");
+
+        const kmPer5Hours = new Speed(new Kilometer(8), new Hour(5));
+        expect(kmPer5Hours.toString()).to.equal("8 km/5hr");
+    });
 });

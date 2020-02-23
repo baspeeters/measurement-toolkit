@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Zeptogram extends SiDerivedUnit {
+    public symbol = "zg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -24));
 }

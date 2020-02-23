@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Milligram extends SiDerivedUnit {
+    public symbol = "mg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, -6));
 }

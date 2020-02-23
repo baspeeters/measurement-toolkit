@@ -39,4 +39,15 @@ describe("SI Approved: Time", () => {
         expect(days.to.Hour().value.toPrecision(6)).to.equal("36.0000");
         expect(days.to.Day().value.toPrecision(6)).to.equal("1.50000");
     });
+
+    it("Should have symbols", () => {
+        const day = new Day(6);
+        expect(day.toString()).to.equal("6 d");
+
+        const hour = new Hour(4);
+        expect(hour.toString()).to.equal("4 hr");
+
+        const minute = new Minute(2);
+        expect(minute.toString()).to.equal("2 min");
+    });
 });

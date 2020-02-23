@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Microsecond extends SiDerivedUnit {
+    public symbol = "µs";
     public baseUnit = new Second(this.value * Math.pow(10, -6));
 }

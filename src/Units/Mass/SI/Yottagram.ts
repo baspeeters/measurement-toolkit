@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Yottagram extends SiDerivedUnit {
+    public symbol = "Yg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, 21));
 }

@@ -48,4 +48,12 @@ describe("US Customary System for Mass (Troy)", () => {
             expect(conversion.to[fromUnitName]().value.toFixed(13)).to.equal("1.0000000000000");
         });
     });
+
+    it("Should have symbols", () => {
+        const toz = new TroyOunce(6);
+        expect(toz.toString()).to.equal("6 oz (t)");
+
+        const tlb = new TroyPound(4);
+        expect(tlb.toString()).to.equal("4 lb (t)");
+    });
 });

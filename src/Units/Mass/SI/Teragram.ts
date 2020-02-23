@@ -10,5 +10,6 @@ import {Kilogram} from "./Kilogram";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Teragram extends SiDerivedUnit {
+    public symbol = "Tg";
     public baseUnit = new Kilogram(this.value * Math.pow(10, 9));
 }

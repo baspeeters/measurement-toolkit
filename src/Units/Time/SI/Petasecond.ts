@@ -10,5 +10,6 @@ import {Second} from "./Second";
 import {SiDerivedUnit} from "./SiDerivedUnit";
 
 export class Petasecond extends SiDerivedUnit {
+    public symbol = "Ps";
     public baseUnit = new Second(this.value * Math.pow(10, 15));
 }

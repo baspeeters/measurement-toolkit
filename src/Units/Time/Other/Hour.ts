@@ -11,5 +11,6 @@ import {Second} from "../SI/Second";
 import {SiDerivedUnit} from "../SI/SiDerivedUnit";
 
 export class Hour extends SiDerivedUnit implements IUnitOfTime {
+    public symbol = "hr";
     public baseUnit = new Second(this.value * 3600);
 }
