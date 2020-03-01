@@ -58,7 +58,7 @@
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
-*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L17)*
+*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L17)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Name | Type |
 
 *Overrides [UsDerivedUnit](_mass_us_usderivedunit_.usderivedunit.md).[baseUnit](_mass_us_usderivedunit_.usderivedunit.md#abstract-baseunit)*
 
-*Defined in [Mass/US/Avoirdupois/Grain.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/US/Avoirdupois/Grain.ts#L17)*
+*Defined in [Mass/US/Avoirdupois/Grain.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Mass/US/Avoirdupois/Grain.ts#L17)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[symbol](_simpleunit_.simpleunit.md#abstract-symbol)*
 
-*Defined in [Mass/US/Avoirdupois/Grain.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/US/Avoirdupois/Grain.ts#L16)*
+*Defined in [Mass/US/Avoirdupois/Grain.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Mass/US/Avoirdupois/Grain.ts#L16)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
 
-*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L15)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L15)*
 
 ## Accessors
 
@@ -112,7 +112,7 @@ ___
 
 *Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L14)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -126,7 +126,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
 
-*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L35)*
+*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L35)*
 
 **Parameters:**
 
@@ -146,7 +146,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
 
-*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L41)*
+*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L41)*
 
 **Parameters:**
 
@@ -164,7 +164,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[dividedBy](_simpleunit_.simpleunit.md#dividedby)*
 
-*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L47)*
+*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L47)*
 
 **Parameters:**
 
@@ -186,7 +186,7 @@ ___
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
 
-*Defined in [SimpleDerivedUnit.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleDerivedUnit.ts#L19)*
+*Defined in [SimpleDerivedUnit.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleDerivedUnit.ts#L19)*
 
 **Returns:** *object*
 
@@ -204,7 +204,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
 
-*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L53)*
+*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L53)*
 
 **Parameters:**
 
@@ -224,7 +224,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
 
-*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L59)*
+*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L59)*
 
 **Parameters:**
 
@@ -242,7 +242,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOfThis](_simpleunit_.simpleunit.md#percentageofthis)*
 
-*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L65)*
+*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L65)*
 
 **Parameters:**
 
@@ -262,7 +262,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
 
-*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L29)*
+*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L29)*
 
 **Parameters:**
 
@@ -282,7 +282,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[toString](_simpleunit_.simpleunit.md#tostring)*
 
-*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L71)*
+*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L71)*
 
 **Returns:** *string*
 
@@ -294,12 +294,12 @@ ___
 
 *Implementation of [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md).[derivedUnits](../interfaces/_ibaseunit_.ibaseunit.md#derivedunits)*
 
-*Defined in [Mass/US/Avoirdupois/Grain.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/US/Avoirdupois/Grain.ts#L18)*
+*Defined in [Mass/US/Avoirdupois/Grain.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Mass/US/Avoirdupois/Grain.ts#L18)*
 
 ###  TroyPound
 
 ▸ **TroyPound**(): *[TroyPound](_mass_us_troy_troypound_.troypound.md)*
 
-*Defined in [Mass/US/Avoirdupois/Grain.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Mass/US/Avoirdupois/Grain.ts#L19)*
+*Defined in [Mass/US/Avoirdupois/Grain.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Mass/US/Avoirdupois/Grain.ts#L19)*
 
 **Returns:** *[TroyPound](_mass_us_troy_troypound_.troypound.md)*

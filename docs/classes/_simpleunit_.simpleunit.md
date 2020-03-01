@@ -50,7 +50,7 @@
 
 \+ **new SimpleUnit**(`value`: number): *[SimpleUnit](_simpleunit_.simpleunit.md)*
 
-*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L17)*
+*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L17)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ Name | Type |
 
 *Implementation of [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md).[symbol](../interfaces/_isimpleunit_.isimpleunit.md#symbol)*
 
-*Defined in [SimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L13)*
+*Defined in [SimpleUnit.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L13)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 *Implementation of [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md).[value](../interfaces/_isimpleunit_.isimpleunit.md#value)*
 
-*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L15)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L15)*
 
 ## Accessors
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L14)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -100,7 +100,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
 
-*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L35)*
+*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L35)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
 
-*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L41)*
+*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L41)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **dividedBy**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L47)*
+*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L47)*
 
 **Parameters:**
 
@@ -154,7 +154,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[getConverters](_unit_.unit.md#getconverters)*
 
-*Defined in [SimpleUnit.ts:25](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L25)*
+*Defined in [SimpleUnit.ts:25](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L25)*
 
 **Returns:** *object*
 
@@ -170,7 +170,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
 
-*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L53)*
+*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L53)*
 
 **Parameters:**
 
@@ -188,7 +188,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
 
-*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L59)*
+*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L59)*
 
 **Parameters:**
 
@@ -204,7 +204,7 @@ ___
 
 ▸ **percentageOfThis**(`unit`: [SimpleUnit](_simpleunit_.simpleunit.md)): *this*
 
-*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L65)*
+*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L65)*
 
 **Parameters:**
 
@@ -222,7 +222,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
 
-*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L29)*
+*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L29)*
 
 **Parameters:**
 
@@ -240,6 +240,6 @@ ___
 
 *Implementation of [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)*
 
-*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L71)*
+*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L71)*
 
 **Returns:** *string*

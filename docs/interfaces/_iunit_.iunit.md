@@ -82,8 +82,8 @@ file that was distributed with this source code.
 * [Quarter](../classes/_mass_us_avoirdupois_quarter_.quarter.md)
 * [Second](../classes/_time_si_second_.second.md)
 * [SiDerivedUnit](../classes/_time_si_siderivedunit_.siderivedunit.md)
-* [SiDerivedUnit](../classes/_mass_si_siderivedunit_.siderivedunit.md)
 * [SiDerivedUnit](../classes/_length_si_siderivedunit_.siderivedunit.md)
+* [SiDerivedUnit](../classes/_mass_si_siderivedunit_.siderivedunit.md)
 * [SimpleBaseUnit](../classes/_simplebaseunit_.simplebaseunit.md)
 * [SimpleDerivedUnit](../classes/_simplederivedunit_.simplederivedunit.md)
 * [SimpleUnit](../classes/_simpleunit_.simpleunit.md)
@@ -95,6 +95,7 @@ file that was distributed with this source code.
 * [TroyPound](../classes/_mass_us_troy_troypound_.troypound.md)
 * [Unit](../classes/_unit_.unit.md)
 * [UsDerivedUnit](../classes/_mass_us_usderivedunit_.usderivedunit.md)
+* [Yard](../classes/_length_us_yard_.yard.md)
 * [Yoctogram](../classes/_mass_si_yoctogram_.yoctogram.md)
 * [Yoctometer](../classes/_length_si_yoctometer_.yoctometer.md)
 * [Yoctosecond](../classes/_time_si_yoctosecond_.yoctosecond.md)
@@ -129,7 +130,7 @@ file that was distributed with this source code.
 
 • **to**: *object*
 
-*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L10)*
+*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L10)*
 
 #### Type declaration:
 
@@ -143,7 +144,7 @@ file that was distributed with this source code.
 
 ▸ **add**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L12)*
+*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L12)*
 
 **Parameters:**
 
@@ -159,7 +160,7 @@ ___
 
 ▸ **divideBy**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L14)*
+*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L14)*
 
 **Parameters:**
 
@@ -175,7 +176,7 @@ ___
 
 ▸ **multiply**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L16)*
+*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L16)*
 
 **Parameters:**
 
@@ -191,7 +192,7 @@ ___
 
 ▸ **percentageOf**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L18)*
+*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L18)*
 
 **Parameters:**
 
@@ -207,7 +208,7 @@ ___
 
 ▸ **subtract**(`unit`: [IUnit](_iunit_.iunit.md)): *this*
 
-*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L20)*
+*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L20)*
 
 **Parameters:**
 
@@ -223,6 +224,6 @@ ___
 
 ▸ **toString**(): *string*
 
-*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/IUnit.ts#L22)*
+*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L22)*
 
 **Returns:** *string*

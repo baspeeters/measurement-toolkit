@@ -35,6 +35,7 @@
 * ["Length/SI/Yottameter"](modules/_length_si_yottameter_.md)
 * ["Length/SI/Zeptometer"](modules/_length_si_zeptometer_.md)
 * ["Length/SI/Zettameter"](modules/_length_si_zettameter_.md)
+* ["Length/US/Yard"](modules/_length_us_yard_.md)
 * ["Mass"](modules/_mass_.md)
 * ["Mass/IUnitOfMass"](modules/_mass_iunitofmass_.md)
 * ["Mass/SI/Attogram"](modules/_mass_si_attogram_.md)

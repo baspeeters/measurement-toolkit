@@ -1,54 +1,55 @@
-[measurement-toolkit](../README.md) › ["Time/SI/Decasecond"](../modules/_time_si_decasecond_.md) › [Decasecond](_time_si_decasecond_.decasecond.md)
+[measurement-toolkit](../README.md) › ["Length/US/Yard"](../modules/_length_us_yard_.md) › [Yard](_length_us_yard_.yard.md)
 
-# Class: Decasecond
+# Class: Yard
 
 ## Hierarchy
 
-  ↳ [SiDerivedUnit](_time_si_siderivedunit_.siderivedunit.md)
+  ↳ [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md)
 
-  ↳ **Decasecond**
+  ↳ **Yard**
 
 ## Implements
 
 * [IUnit](../interfaces/_iunit_.iunit.md)
 * [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
 * [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
-* [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md)
-* [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)
+* [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md)
+* [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md)
+* [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)
 
 ## Index
 
 ### Constructors
 
-* [constructor](_time_si_decasecond_.decasecond.md#constructor)
+* [constructor](_length_us_yard_.yard.md#constructor)
 
 ### Properties
 
-* [baseUnit](_time_si_decasecond_.decasecond.md#baseunit)
-* [symbol](_time_si_decasecond_.decasecond.md#symbol)
-* [value](_time_si_decasecond_.decasecond.md#value)
+* [derivedUnits](_length_us_yard_.yard.md#derivedunits)
+* [symbol](_length_us_yard_.yard.md#symbol)
+* [value](_length_us_yard_.yard.md#value)
 
 ### Accessors
 
-* [to](_time_si_decasecond_.decasecond.md#to)
+* [to](_length_us_yard_.yard.md#to)
 
 ### Methods
 
-* [add](_time_si_decasecond_.decasecond.md#add)
-* [divideBy](_time_si_decasecond_.decasecond.md#divideby)
-* [dividedBy](_time_si_decasecond_.decasecond.md#dividedby)
-* [getConverters](_time_si_decasecond_.decasecond.md#getconverters)
-* [multiply](_time_si_decasecond_.decasecond.md#multiply)
-* [percentageOf](_time_si_decasecond_.decasecond.md#percentageof)
-* [percentageOfThis](_time_si_decasecond_.decasecond.md#percentageofthis)
-* [subtract](_time_si_decasecond_.decasecond.md#subtract)
-* [toString](_time_si_decasecond_.decasecond.md#tostring)
+* [add](_length_us_yard_.yard.md#add)
+* [divideBy](_length_us_yard_.yard.md#divideby)
+* [dividedBy](_length_us_yard_.yard.md#dividedby)
+* [getConverters](_length_us_yard_.yard.md#getconverters)
+* [multiply](_length_us_yard_.yard.md#multiply)
+* [percentageOf](_length_us_yard_.yard.md#percentageof)
+* [percentageOfThis](_length_us_yard_.yard.md#percentageofthis)
+* [subtract](_length_us_yard_.yard.md#subtract)
+* [toString](_length_us_yard_.yard.md#tostring)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new Decasecond**(`value`: number): *[Decasecond](_time_si_decasecond_.decasecond.md)*
+\+ **new Yard**(`value`: number): *[Yard](_length_us_yard_.yard.md)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
@@ -60,31 +61,33 @@ Name | Type |
 ------ | ------ |
 `value` | number |
 
-**Returns:** *[Decasecond](_time_si_decasecond_.decasecond.md)*
+**Returns:** *[Yard](_length_us_yard_.yard.md)*
 
 ## Properties
 
-###  baseUnit
+###  derivedUnits
 
-• **baseUnit**: *[Second](_time_si_second_.second.md)‹›* = new Second(this.value * Math.pow(10, 1))
+• **derivedUnits**: *object*
 
-*Implementation of [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md).[baseUnit](../interfaces/_iderivedunit_.iderivedunit.md#baseunit)*
+*Implementation of [IBaseUnit](../interfaces/_ibaseunit_.ibaseunit.md).[derivedUnits](../interfaces/_ibaseunit_.ibaseunit.md#derivedunits)*
 
-*Overrides [SiDerivedUnit](_time_si_siderivedunit_.siderivedunit.md).[baseUnit](_time_si_siderivedunit_.siderivedunit.md#abstract-baseunit)*
+*Inherited from [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[derivedUnits](_simplebaseunit_.simplebaseunit.md#derivedunits)*
 
-*Defined in [Time/SI/Decasecond.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Time/SI/Decasecond.ts#L14)*
+*Defined in [SimpleBaseUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleBaseUnit.ts#L14)*
+
+#### Type declaration:
 
 ___
 
 ###  symbol
 
-• **symbol**: *string* = "das"
+• **symbol**: *string* = "yd"
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[symbol](../interfaces/_time_iunitoftime_.iunitoftime.md#symbol)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md).[symbol](../interfaces/_length_iunitoflength_.iunitoflength.md#symbol)*
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[symbol](_simpleunit_.simpleunit.md#abstract-symbol)*
 
-*Defined in [Time/SI/Decasecond.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Time/SI/Decasecond.ts#L13)*
+*Defined in [Length/US/Yard.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/US/Yard.ts#L15)*
 
 ___
 
@@ -92,7 +95,7 @@ ___
 
 • **value**: *number*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[value](../interfaces/_time_iunitoftime_.iunitoftime.md#value)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md).[value](../interfaces/_length_iunitoflength_.iunitoflength.md#value)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
 
@@ -174,13 +177,13 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)*
 
-*Inherited from [SimpleDerivedUnit](_simplederivedunit_.simplederivedunit.md).[getConverters](_simplederivedunit_.simplederivedunit.md#getconverters)*
+*Inherited from [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[getConverters](_simplebaseunit_.simplebaseunit.md#getconverters)*
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
 
-*Defined in [SimpleDerivedUnit.ts:19](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleDerivedUnit.ts#L19)*
+*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleBaseUnit.ts#L16)*
 
 **Returns:** *object*
 
@@ -272,7 +275,7 @@ ___
 
 ▸ **toString**(): *string*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[toString](_simpleunit_.simpleunit.md#tostring)*
 

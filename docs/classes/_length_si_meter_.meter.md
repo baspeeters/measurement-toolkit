@@ -55,7 +55,7 @@
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
-*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L17)*
+*Defined in [SimpleUnit.ts:17](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L17)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Name | Type |
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[symbol](_simpleunit_.simpleunit.md#abstract-symbol)*
 
-*Defined in [Length/SI/Meter.ts:33](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L33)*
+*Defined in [Length/SI/Meter.ts:34](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L34)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
 
-*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L15)*
+*Defined in [SimpleUnit.ts:15](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L15)*
 
 ## Accessors
 
@@ -97,7 +97,7 @@ ___
 
 *Inherited from [Unit](_unit_.unit.md).[to](_unit_.unit.md#to)*
 
-*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Unit.ts#L14)*
+*Defined in [Unit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Unit.ts#L14)*
 
 **Returns:** *any*
 
@@ -111,7 +111,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[add](_unit_.unit.md#abstract-add)*
 
-*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L35)*
+*Defined in [SimpleUnit.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L35)*
 
 **Parameters:**
 
@@ -131,7 +131,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[divideBy](_unit_.unit.md#abstract-divideby)*
 
-*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L41)*
+*Defined in [SimpleUnit.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L41)*
 
 **Parameters:**
 
@@ -149,7 +149,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[dividedBy](_simpleunit_.simpleunit.md#dividedby)*
 
-*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L47)*
+*Defined in [SimpleUnit.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L47)*
 
 **Parameters:**
 
@@ -171,7 +171,7 @@ ___
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[getConverters](_simpleunit_.simpleunit.md#getconverters)*
 
-*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleBaseUnit.ts#L16)*
+*Defined in [SimpleBaseUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleBaseUnit.ts#L16)*
 
 **Returns:** *object*
 
@@ -189,7 +189,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[multiply](_unit_.unit.md#abstract-multiply)*
 
-*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L53)*
+*Defined in [SimpleUnit.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L53)*
 
 **Parameters:**
 
@@ -209,7 +209,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[percentageOf](_unit_.unit.md#abstract-percentageof)*
 
-*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L59)*
+*Defined in [SimpleUnit.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L59)*
 
 **Parameters:**
 
@@ -227,7 +227,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[percentageOfThis](_simpleunit_.simpleunit.md#percentageofthis)*
 
-*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L65)*
+*Defined in [SimpleUnit.ts:65](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L65)*
 
 **Parameters:**
 
@@ -247,7 +247,7 @@ ___
 
 *Overrides [Unit](_unit_.unit.md).[subtract](_unit_.unit.md#abstract-subtract)*
 
-*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L29)*
+*Defined in [SimpleUnit.ts:29](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L29)*
 
 **Parameters:**
 
@@ -267,7 +267,7 @@ ___
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[toString](_simpleunit_.simpleunit.md#tostring)*
 
-*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/SimpleUnit.ts#L71)*
+*Defined in [SimpleUnit.ts:71](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/SimpleUnit.ts#L71)*
 
 **Returns:** *string*
 
@@ -281,13 +281,13 @@ ___
 
 *Overrides [SimpleBaseUnit](_simplebaseunit_.simplebaseunit.md).[derivedUnits](_simplebaseunit_.simplebaseunit.md#derivedunits)*
 
-*Defined in [Length/SI/Meter.ts:35](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L35)*
+*Defined in [Length/SI/Meter.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L36)*
 
 ###  Attometer
 
 ▸ **Attometer**(): *[Attometer](_length_si_attometer_.attometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:39](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L39)*
+*Defined in [Length/SI/Meter.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L40)*
 
 **Returns:** *[Attometer](_length_si_attometer_.attometer.md)‹›*
 
@@ -295,7 +295,7 @@ ___
 
 ▸ **Centimeter**(): *[Centimeter](_length_si_centimeter_.centimeter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L45)*
+*Defined in [Length/SI/Meter.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L46)*
 
 **Returns:** *[Centimeter](_length_si_centimeter_.centimeter.md)‹›*
 
@@ -303,7 +303,7 @@ ___
 
 ▸ **Decameter**(): *[Decameter](_length_si_decameter_.decameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L47)*
+*Defined in [Length/SI/Meter.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L48)*
 
 **Returns:** *[Decameter](_length_si_decameter_.decameter.md)‹›*
 
@@ -311,7 +311,7 @@ ___
 
 ▸ **Decimeter**(): *[Decimeter](_length_si_decimeter_.decimeter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:46](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L46)*
+*Defined in [Length/SI/Meter.ts:47](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L47)*
 
 **Returns:** *[Decimeter](_length_si_decimeter_.decimeter.md)‹›*
 
@@ -319,7 +319,7 @@ ___
 
 ▸ **Exameter**(): *[Exameter](_length_si_exameter_.exameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L54)*
+*Defined in [Length/SI/Meter.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L55)*
 
 **Returns:** *[Exameter](_length_si_exameter_.exameter.md)‹›*
 
@@ -327,7 +327,7 @@ ___
 
 ▸ **Femtometer**(): *[Femtometer](_length_si_femtometer_.femtometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:40](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L40)*
+*Defined in [Length/SI/Meter.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L41)*
 
 **Returns:** *[Femtometer](_length_si_femtometer_.femtometer.md)‹›*
 
@@ -335,7 +335,7 @@ ___
 
 ▸ **Gigameter**(): *[Gigameter](_length_si_gigameter_.gigameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L51)*
+*Defined in [Length/SI/Meter.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L52)*
 
 **Returns:** *[Gigameter](_length_si_gigameter_.gigameter.md)‹›*
 
@@ -343,7 +343,7 @@ ___
 
 ▸ **Hectometer**(): *[Hectometer](_length_si_hectometer_.hectometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:48](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L48)*
+*Defined in [Length/SI/Meter.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L49)*
 
 **Returns:** *[Hectometer](_length_si_hectometer_.hectometer.md)‹›*
 
@@ -351,7 +351,7 @@ ___
 
 ▸ **Kilometer**(): *[Kilometer](_length_si_kilometer_.kilometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:49](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L49)*
+*Defined in [Length/SI/Meter.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L50)*
 
 **Returns:** *[Kilometer](_length_si_kilometer_.kilometer.md)‹›*
 
@@ -359,7 +359,7 @@ ___
 
 ▸ **Megameter**(): *[Megameter](_length_si_megameter_.megameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:50](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L50)*
+*Defined in [Length/SI/Meter.ts:51](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L51)*
 
 **Returns:** *[Megameter](_length_si_megameter_.megameter.md)‹›*
 
@@ -367,7 +367,7 @@ ___
 
 ▸ **Micrometer**(): *[Micrometer](_length_si_micrometer_.micrometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L43)*
+*Defined in [Length/SI/Meter.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L44)*
 
 **Returns:** *[Micrometer](_length_si_micrometer_.micrometer.md)‹›*
 
@@ -375,7 +375,7 @@ ___
 
 ▸ **Millimeter**(): *[Millimeter](_length_si_millimeter_.millimeter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:44](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L44)*
+*Defined in [Length/SI/Meter.ts:45](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L45)*
 
 **Returns:** *[Millimeter](_length_si_millimeter_.millimeter.md)‹›*
 
@@ -383,7 +383,7 @@ ___
 
 ▸ **Nanometer**(): *[Nanometer](_length_si_nanometer_.nanometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L42)*
+*Defined in [Length/SI/Meter.ts:43](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L43)*
 
 **Returns:** *[Nanometer](_length_si_nanometer_.nanometer.md)‹›*
 
@@ -391,7 +391,7 @@ ___
 
 ▸ **Petameter**(): *[Petameter](_length_si_petameter_.petameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L53)*
+*Defined in [Length/SI/Meter.ts:54](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L54)*
 
 **Returns:** *[Petameter](_length_si_petameter_.petameter.md)‹›*
 
@@ -399,7 +399,7 @@ ___
 
 ▸ **Picometer**(): *[Picometer](_length_si_picometer_.picometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:41](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L41)*
+*Defined in [Length/SI/Meter.ts:42](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L42)*
 
 **Returns:** *[Picometer](_length_si_picometer_.picometer.md)‹›*
 
@@ -407,15 +407,23 @@ ___
 
 ▸ **Terameter**(): *[Terameter](_length_si_terameter_.terameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:52](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L52)*
+*Defined in [Length/SI/Meter.ts:53](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L53)*
 
 **Returns:** *[Terameter](_length_si_terameter_.terameter.md)‹›*
+
+###  Yard
+
+▸ **Yard**(): *[Yard](_length_us_yard_.yard.md)‹›*
+
+*Defined in [Length/SI/Meter.ts:59](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L59)*
+
+**Returns:** *[Yard](_length_us_yard_.yard.md)‹›*
 
 ###  Yoctometer
 
 ▸ **Yoctometer**(): *[Yoctometer](_length_si_yoctometer_.yoctometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:36](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L36)*
+*Defined in [Length/SI/Meter.ts:37](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L37)*
 
 **Returns:** *[Yoctometer](_length_si_yoctometer_.yoctometer.md)‹›*
 
@@ -423,7 +431,7 @@ ___
 
 ▸ **Yottameter**(): *[Yottameter](_length_si_yottameter_.yottameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L56)*
+*Defined in [Length/SI/Meter.ts:57](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L57)*
 
 **Returns:** *[Yottameter](_length_si_yottameter_.yottameter.md)‹›*
 
@@ -431,7 +439,7 @@ ___
 
 ▸ **Zeptometer**(): *[Zeptometer](_length_si_zeptometer_.zeptometer.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:37](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L37)*
+*Defined in [Length/SI/Meter.ts:38](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L38)*
 
 **Returns:** *[Zeptometer](_length_si_zeptometer_.zeptometer.md)‹›*
 
@@ -439,6 +447,6 @@ ___
 
 ▸ **Zettameter**(): *[Zettameter](_length_si_zettameter_.zettameter.md)‹›*
 
-*Defined in [Length/SI/Meter.ts:55](https://github.com/baspeeters/measurement-toolkit/blob/b77bfc1/src/Units/Length/SI/Meter.ts#L55)*
+*Defined in [Length/SI/Meter.ts:56](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/Length/SI/Meter.ts#L56)*
 
 **Returns:** *[Zettameter](_length_si_zettameter_.zettameter.md)‹›*
