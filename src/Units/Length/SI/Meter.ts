@@ -8,6 +8,7 @@
  */
 import {SimpleBaseUnit} from "../../SimpleBaseUnit";
 import {IUnitOfLength} from "../IUnitOfLength";
+import {Yard} from "../US/Yard";
 import {Attometer} from "./Attometer";
 import {Centimeter} from "./Centimeter";
 import {Decameter} from "./Decameter";
@@ -54,5 +55,7 @@ export class Meter extends SimpleBaseUnit implements IUnitOfLength {
         Exameter: () => new Exameter(this.value * Math.pow(10, -18)),
         Zettameter: () => new Zettameter(this.value * Math.pow(10, -21)),
         Yottameter: () => new Yottameter(this.value * Math.pow(10, -24)),
+
+        Yard: () => new Yard(this.value / 0.9144),
     };
 }
