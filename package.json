@@ -1,6 +1,6 @@
 {
   "name": "measurement-toolkit",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Math and Conversion for Weight and Measurement Units",
   "main": "lib/main.js",
   "types": "./lib/main.d.ts",
@@ -23,15 +23,22 @@
   "keywords": [
     "avoirdupois",
     "convert",
+    "converter",
+    "conversion",
     "imperial",
     "kilograms",
+    "length",
     "mass",
     "measurement",
     "metric",
+    "speed",
+    "time",
     "troy",
+    "unit converter",
     "units",
     "us customary",
-    "weight"
+    "weight",
+    "yard"
   ],
   "author": "Bas Peeters <bas@peete.rs>",
   "license": "BSD-3-Clause",
