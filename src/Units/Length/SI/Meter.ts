@@ -55,7 +55,9 @@ export class Meter extends SimpleBaseUnit implements IUnitOfLength {
         Exameter: () => new Exameter(this.value * Math.pow(10, -18)),
         Zettameter: () => new Zettameter(this.value * Math.pow(10, -21)),
         Yottameter: () => new Yottameter(this.value * Math.pow(10, -24)),
+    };
 
+    protected converters = {
         Yard: () => new Yard(this.value / 0.9144),
     };
 }
