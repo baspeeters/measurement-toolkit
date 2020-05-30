@@ -36,7 +36,7 @@
 
 *Inherited from [IUnit](_iunit_.iunit.md).[to](_iunit_.iunit.md#to)*
 
-*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L10)*
+*Defined in [IUnit.ts:10](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L10)*
 
 #### Type declaration:
 
@@ -52,7 +52,7 @@
 
 *Inherited from [IUnit](_iunit_.iunit.md).[add](_iunit_.iunit.md#add)*
 
-*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L12)*
+*Defined in [IUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L12)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **convert**(`unit`: [ICompoundUnit](_icompoundunit_.icompoundunit.md)): *[ICompoundUnit](_icompoundunit_.icompoundunit.md)*
 
-*Defined in [ICompoundUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/ICompoundUnit.ts#L12)*
+*Defined in [ICompoundUnit.ts:12](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/ICompoundUnit.ts#L12)*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[divideBy](_iunit_.iunit.md#divideby)*
 
-*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L14)*
+*Defined in [IUnit.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L14)*
 
 **Parameters:**
 
@@ -104,7 +104,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[multiply](_iunit_.iunit.md#multiply)*
 
-*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L16)*
+*Defined in [IUnit.ts:16](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L16)*
 
 **Parameters:**
 
@@ -122,7 +122,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[percentageOf](_iunit_.iunit.md#percentageof)*
 
-*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L18)*
+*Defined in [IUnit.ts:18](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L18)*
 
 **Parameters:**
 
@@ -140,7 +140,7 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[subtract](_iunit_.iunit.md#subtract)*
 
-*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L20)*
+*Defined in [IUnit.ts:20](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L20)*
 
 **Parameters:**
 
@@ -158,6 +158,6 @@ ___
 
 *Inherited from [IUnit](_iunit_.iunit.md).[toString](_iunit_.iunit.md#tostring)*
 
-*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/212ab3d/src/Units/IUnit.ts#L22)*
+*Defined in [IUnit.ts:22](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/IUnit.ts#L22)*
 
 **Returns:** *string*

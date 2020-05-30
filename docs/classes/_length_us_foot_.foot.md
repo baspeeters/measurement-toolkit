@@ -1,12 +1,12 @@
-[measurement-toolkit](../README.md) › ["Time/SI/Attosecond"](../modules/_time_si_attosecond_.md) › [Attosecond](_time_si_attosecond_.attosecond.md)
+[measurement-toolkit](../README.md) › ["Length/US/Foot"](../modules/_length_us_foot_.md) › [Foot](_length_us_foot_.foot.md)
 
-# Class: Attosecond
+# Class: Foot
 
 ## Hierarchy
 
-  ↳ [SiDerivedUnit](_time_si_siderivedunit_.siderivedunit.md)
+  ↳ [UsDerivedUnit](_length_us_usderivedunit_.usderivedunit.md)
 
-  ↳ **Attosecond**
+  ↳ **Foot**
 
 ## Implements
 
@@ -14,41 +14,41 @@
 * [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
 * [ISimpleUnit](../interfaces/_isimpleunit_.isimpleunit.md)
 * [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md)
-* [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)
+* [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)
 
 ## Index
 
 ### Constructors
 
-* [constructor](_time_si_attosecond_.attosecond.md#constructor)
+* [constructor](_length_us_foot_.foot.md#constructor)
 
 ### Properties
 
-* [baseUnit](_time_si_attosecond_.attosecond.md#baseunit)
-* [symbol](_time_si_attosecond_.attosecond.md#symbol)
-* [value](_time_si_attosecond_.attosecond.md#value)
+* [baseUnit](_length_us_foot_.foot.md#baseunit)
+* [symbol](_length_us_foot_.foot.md#symbol)
+* [value](_length_us_foot_.foot.md#value)
 
 ### Accessors
 
-* [to](_time_si_attosecond_.attosecond.md#to)
+* [to](_length_us_foot_.foot.md#to)
 
 ### Methods
 
-* [add](_time_si_attosecond_.attosecond.md#add)
-* [divideBy](_time_si_attosecond_.attosecond.md#divideby)
-* [dividedBy](_time_si_attosecond_.attosecond.md#dividedby)
-* [getConverters](_time_si_attosecond_.attosecond.md#getconverters)
-* [multiply](_time_si_attosecond_.attosecond.md#multiply)
-* [percentageOf](_time_si_attosecond_.attosecond.md#percentageof)
-* [percentageOfThis](_time_si_attosecond_.attosecond.md#percentageofthis)
-* [subtract](_time_si_attosecond_.attosecond.md#subtract)
-* [toString](_time_si_attosecond_.attosecond.md#tostring)
+* [add](_length_us_foot_.foot.md#add)
+* [divideBy](_length_us_foot_.foot.md#divideby)
+* [dividedBy](_length_us_foot_.foot.md#dividedby)
+* [getConverters](_length_us_foot_.foot.md#getconverters)
+* [multiply](_length_us_foot_.foot.md#multiply)
+* [percentageOf](_length_us_foot_.foot.md#percentageof)
+* [percentageOfThis](_length_us_foot_.foot.md#percentageofthis)
+* [subtract](_length_us_foot_.foot.md#subtract)
+* [toString](_length_us_foot_.foot.md#tostring)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new Attosecond**(`value`: number): *[Attosecond](_time_si_attosecond_.attosecond.md)*
+\+ **new Foot**(`value`: number): *[Foot](_length_us_foot_.foot.md)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[constructor](_simpleunit_.simpleunit.md#constructor)*
 
@@ -60,31 +60,31 @@ Name | Type |
 ------ | ------ |
 `value` | number |
 
-**Returns:** *[Attosecond](_time_si_attosecond_.attosecond.md)*
+**Returns:** *[Foot](_length_us_foot_.foot.md)*
 
 ## Properties
 
 ###  baseUnit
 
-• **baseUnit**: *[Second](_time_si_second_.second.md)‹›* = new Second(this.value * Math.pow(10, -18))
+• **baseUnit**: *[Yard](_length_us_yard_.yard.md)‹›* = new Yard(this.value / 3)
 
 *Implementation of [IDerivedUnit](../interfaces/_iderivedunit_.iderivedunit.md).[baseUnit](../interfaces/_iderivedunit_.iderivedunit.md#baseunit)*
 
-*Overrides [SiDerivedUnit](_time_si_siderivedunit_.siderivedunit.md).[baseUnit](_time_si_siderivedunit_.siderivedunit.md#abstract-baseunit)*
+*Overrides [UsDerivedUnit](_length_us_usderivedunit_.usderivedunit.md).[baseUnit](_length_us_usderivedunit_.usderivedunit.md#abstract-baseunit)*
 
-*Defined in [Time/SI/Attosecond.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/Time/SI/Attosecond.ts#L14)*
+*Defined in [Length/US/Foot.ts:14](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/Length/US/Foot.ts#L14)*
 
 ___
 
 ###  symbol
 
-• **symbol**: *string* = "as"
+• **symbol**: *string* = "ft"
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[symbol](../interfaces/_time_iunitoftime_.iunitoftime.md#symbol)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md).[symbol](../interfaces/_length_iunitoflength_.iunitoflength.md#symbol)*
 
 *Overrides [SimpleUnit](_simpleunit_.simpleunit.md).[symbol](_simpleunit_.simpleunit.md#abstract-symbol)*
 
-*Defined in [Time/SI/Attosecond.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/Time/SI/Attosecond.ts#L13)*
+*Defined in [Length/US/Foot.ts:13](https://github.com/baspeeters/measurement-toolkit/blob/b5deaf3/src/Units/Length/US/Foot.ts#L13)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **value**: *number*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md).[value](../interfaces/_time_iunitoftime_.iunitoftime.md#value)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md).[value](../interfaces/_length_iunitoflength_.iunitoflength.md#value)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[value](_simpleunit_.simpleunit.md#value)*
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **getConverters**(): *object*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)*
 
 *Inherited from [SimpleDerivedUnit](_simplederivedunit_.simplederivedunit.md).[getConverters](_simplederivedunit_.simplederivedunit.md#getconverters)*
 
@@ -272,7 +272,7 @@ ___
 
 ▸ **toString**(): *string*
 
-*Implementation of [IUnitOfTime](../interfaces/_time_iunitoftime_.iunitoftime.md)*
+*Implementation of [IUnitOfLength](../interfaces/_length_iunitoflength_.iunitoflength.md)*
 
 *Inherited from [SimpleUnit](_simpleunit_.simpleunit.md).[toString](_simpleunit_.simpleunit.md#tostring)*
 

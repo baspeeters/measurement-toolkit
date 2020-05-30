@@ -127,7 +127,10 @@ kgs.subtract(toz);
    <tr>
     <td colspan="2">US</td>
     <td>
-      <a href="./docs/classes/_length_us_yard_.yard.md">Yard</a>
+      <a href="./docs/classes/_length_us_yard_.yard.md">Yard</a>, 
+      <a href="./docs/classes/_length_us_inch_.inch.md">Inch</a>, 
+      <a href="./docs/classes/_length_us_foot_.foot.md">Foot</a>,
+      <a href="./docs/classes/_length_us_mile_.mile.md">Mile</a>
     </td>
   </tr>
   <tr>
