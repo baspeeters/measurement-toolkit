@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node:
+          - 'lts/*'
+          - 'current'
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+      - run: npm ci
+
+      - name: Tests
+        run: npm run test
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "*"
+          check-latest: true
+      - run: npm ci
+
+      - name: Linter
+        run: npm run lint
+
+  coverage:
+    runs-on: ubuntu-latest
+    needs:
+      - test
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "*"
+          check-latest: true
+      - run: npm ci
+      - run: npm install -g codecov
+
+      - name: Run tests with coverage
+        run: ./node_modules/.bin/nyc --reporter=text --reporter=lcovonly npm test
+
+      - name: Codecov
+        run: codecov --disable=gcov
+
+  build:
+    runs-on: ubuntu-latest
+    needs:
+      - test
+      - lint
+      - coverage
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "*"
+        check-latest: true
+    - run: npm ci
+
+    - name: Clean
+      run: npm run build:clean
+
+    - name: Build
+      run: npm run build:npm
+
+    - name: NPM Init
+      run: npm init --yes
+
+    - name: NPM publish dry run
+      run: npm publish --dry-run

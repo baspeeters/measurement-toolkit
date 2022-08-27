@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "*"
+        check-latest: true
+    - run: npm ci
+
+    - name: Clean
+      run: npm run build:clean
+
+    - name: Build
+      run: npm run build:npm
+
+    - name: NPM Init
+      run: npm init --yes
+
+    - name: NPM publish dry run
+      run: npm publish
