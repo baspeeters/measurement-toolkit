@@ -30,6 +30,9 @@ export {Yottagram} from "./Mass/SI/Yottagram";
 export {Zeptogram} from "./Mass/SI/Zeptogram";
 export {Zettagram} from "./Mass/SI/Zettagram";
 
+export {SiDerivedUnit} from "./Mass/SI/SiDerivedUnit";
+export {UsDerivedUnit} from "./Mass/US/UsDerivedUnit";
+
 // US/Avoirdupois
 export {Dram} from "./Mass/US/Avoirdupois/Dram";
 export {Grain} from "./Mass/US/Avoirdupois/Grain";
