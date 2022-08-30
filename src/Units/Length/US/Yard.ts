@@ -6,16 +6,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from "../../IBaseUnit";
-import {SimpleBaseUnit} from "../../SimpleBaseUnit";
-import {IUnitOfLength} from "../IUnitOfLength";
-import {Meter} from "../SI/Meter";
-import {Foot} from "./Foot";
-import {Inch} from "./Inch";
-import {Mile} from "./Mile";
+import {IBaseUnit} from '../../IBaseUnit';
+import {SimpleBaseUnit} from '../../SimpleBaseUnit';
+import {IUnitOfLength} from '../IUnitOfLength';
+import {Meter} from '../SI/Meter';
+import {Foot} from './Foot';
+import {Inch} from './Inch';
+import {Mile} from './Mile';
 
 export class Yard extends SimpleBaseUnit implements IBaseUnit, IUnitOfLength {
-    public symbol = "yd";
+    public symbol = 'yd';
 
     public derivedUnits = {
         Inch: (): Inch => new Inch(this.value * 36),

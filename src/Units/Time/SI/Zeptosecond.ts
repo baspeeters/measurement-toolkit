@@ -6,10 +6,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {Second} from "./Second";
-import {SiDerivedUnit} from "./SiDerivedUnit";
+import {Second} from './Second';
+import {SiDerivedUnit} from './SiDerivedUnit';
 
 export class Zeptosecond extends SiDerivedUnit {
-    public symbol = "zs";
+    public symbol = 'zs';
     public baseUnit = new Second(this.value * Math.pow(10, -21));
 }

@@ -6,12 +6,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {ICompoundUnit} from "./ICompoundUnit";
-import * as Length from "./Length";
-import {IUnitOfLength} from "./Length/IUnitOfLength";
-import * as Time from "./Time";
-import {IUnitOfTime} from "./Time/IUnitOfTime";
-import {Unit} from "./Unit";
+import {ICompoundUnit} from './ICompoundUnit';
+import * as Length from './Length';
+import {IUnitOfLength} from './Length/IUnitOfLength';
+import * as Time from './Time';
+import {IUnitOfTime} from './Time/IUnitOfTime';
+import {Unit} from './Unit';
 
 export class Speed extends Unit implements ICompoundUnit {
     public distance: IUnitOfLength;
@@ -47,6 +47,7 @@ export class Speed extends Unit implements ICompoundUnit {
             distance = distance.to[this.distance.constructor.name]();
         }
 
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         return new Time[this.time.constructor.name](
             this.time.value * (distance.value / this.distance.value),
@@ -64,6 +65,7 @@ export class Speed extends Unit implements ICompoundUnit {
             duration = duration.to[this.time.constructor.name]();
         }
 
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         return new Length[this.distance.constructor.name](
             (this.distance.value / this.time.value)

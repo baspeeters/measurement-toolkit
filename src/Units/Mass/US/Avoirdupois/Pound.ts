@@ -6,18 +6,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from "../../../IBaseUnit";
-import {SimpleBaseUnit} from "../../../SimpleBaseUnit";
-import {Kilogram} from "../../SI/Kilogram";
-import {AvoirdupoisTon} from "./AvoirdupoisTon";
-import {Dram} from "./Dram";
-import {Grain} from "./Grain";
-import {Hundredweight} from "./Hundredweight";
-import {Ounce} from "./Ounce";
-import {Quarter} from "./Quarter";
+import {IBaseUnit} from '../../../IBaseUnit';
+import {SimpleBaseUnit} from '../../../SimpleBaseUnit';
+import {Kilogram} from '../../SI/Kilogram';
+import {AvoirdupoisTon} from './AvoirdupoisTon';
+import {Dram} from './Dram';
+import {Grain} from './Grain';
+import {Hundredweight} from './Hundredweight';
+import {Ounce} from './Ounce';
+import {Quarter} from './Quarter';
 
 export class Pound extends SimpleBaseUnit implements IBaseUnit {
-    public symbol = "lb";
+    public symbol = 'lb';
 
     public derivedUnits = {
         Grain: () => new Grain(this.value * 7000),

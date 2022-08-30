@@ -6,24 +6,25 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {expect} from "chai";
-import {AvoirdupoisTon} from "../../../../../../src/main";
-import {Dram} from "../../../../../../src/main";
-import {Grain} from "../../../../../../src/main";
-import {Hundredweight} from "../../../../../../src/main";
-import {Ounce} from "../../../../../../src/main";
-import {Pound} from "../../../../../../src/main";
-import {Quarter} from "../../../../../../src/main";
-import {UsDerivedUnit} from "../../../../../../src/main";
+import {expect} from 'chai';
+import {AvoirdupoisTon} from '../../../../../../src/main';
+import {Dram} from '../../../../../../src/main';
+import {Grain} from '../../../../../../src/main';
+import {Hundredweight} from '../../../../../../src/main';
+import {Ounce} from '../../../../../../src/main';
+import {Pound} from '../../../../../../src/main';
+import {Quarter} from '../../../../../../src/main';
+import {UsDerivedUnit} from '../../../../../../src/main';
 
-describe("US Customary System for Mass (Avoirdupois)", () => {
+describe('US Customary System for Mass (Avoirdupois)', () => {
     [
-        [new Grain(1), "Milligram", "64.7989100000000"],
-        [new Dram(1), "Gram", "1.7718451953125"],
-        [new Ounce(1), "Gram", "28.3495231250000"],
-        [new Quarter(1), "Kilogram", "11.3398092500000"],
-        [new Hundredweight(1), "Kilogram", "45.3592370000000"],
-        [new AvoirdupoisTon(1), "Kilogram", "907.1847400000000"],
+        [new Grain(1), 'Milligram', '64.7989100000000'],
+        [new Dram(1), 'Gram', '1.7718451953125'],
+        [new Ounce(1), 'Gram', '28.3495231250000'],
+        [new Quarter(1), 'Kilogram', '11.3398092500000'],
+        [new Hundredweight(1), 'Kilogram', '45.3592370000000'],
+        [new AvoirdupoisTon(1), 'Kilogram', '907.1847400000000'],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ].map((data: any) => {
         it(`should implement ${data[0].constructor.name}`, () => {
             const fromUnit = data[0];
@@ -34,13 +35,13 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
             expect(fromUnit.to).to.respondTo(toClass);
 
             [
-                "Dram",
-                "Grain",
-                "Hundredweight",
-                "Ounce",
-                "Pound",
-                "Quarter",
-                "AvoirdupoisTon",
+                'Dram',
+                'Grain',
+                'Hundredweight',
+                'Ounce',
+                'Pound',
+                'Quarter',
+                'AvoirdupoisTon',
             ].map((otherUnit: string) => {
                 expect(fromUnit.to).to.respondTo(otherUnit);
             });
@@ -51,30 +52,30 @@ describe("US Customary System for Mass (Avoirdupois)", () => {
             expect(conversion.value.toFixed(13)).to.equal(conversion.value.toFixed(13));
             expect(conversion.value.toFixed(13)).to.equal(toValue);
 
-            expect(conversion.to[fromUnit.constructor.name]().value.toFixed(13)).to.equal("1.0000000000000");
+            expect(conversion.to[fromUnit.constructor.name]().value.toFixed(13)).to.equal('1.0000000000000');
         });
     });
 
-    it("Should have symbols", () => {
+    it('Should have symbols', () => {
         const dram = new Dram(6);
-        expect(dram.toString()).to.equal("6 dr");
+        expect(dram.toString()).to.equal('6 dr');
 
         const grain = new Grain(4);
-        expect(grain.toString()).to.equal("4 gr");
+        expect(grain.toString()).to.equal('4 gr');
 
         const hundredweight = new Hundredweight(2);
-        expect(hundredweight.toString()).to.equal("2 cwt");
+        expect(hundredweight.toString()).to.equal('2 cwt');
 
         const ounce = new Ounce(18);
-        expect(ounce.toString()).to.equal("18 oz");
+        expect(ounce.toString()).to.equal('18 oz');
 
         const pound = new Pound(1);
-        expect(pound.toString()).to.equal("1 lb");
+        expect(pound.toString()).to.equal('1 lb');
 
         const quarter = new Quarter(3);
-        expect(quarter.toString()).to.equal("3 qr");
+        expect(quarter.toString()).to.equal('3 qr');
 
         const avoirdupoisTon = new AvoirdupoisTon(5);
-        expect(avoirdupoisTon.toString()).to.equal("5 t");
+        expect(avoirdupoisTon.toString()).to.equal('5 t');
     });
 });

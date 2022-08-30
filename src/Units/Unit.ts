@@ -6,11 +6,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IUnit} from "./IUnit";
+import {IUnit} from './IUnit';
 
 export abstract class Unit implements IUnit {
     protected converters: {[key: string]: () => IUnit} = {};
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     get to(): any {
         return this.getConverters();
     }

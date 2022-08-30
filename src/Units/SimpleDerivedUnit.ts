@@ -6,11 +6,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from "./IBaseUnit";
-import {IDerivedUnit} from "./IDerivedUnit";
-import {ISimpleUnit} from "./ISimpleUnit";
-import {SimpleBaseUnit} from "./SimpleBaseUnit";
-import {SimpleUnit} from "./SimpleUnit";
+import {IBaseUnit} from './IBaseUnit';
+import {IDerivedUnit} from './IDerivedUnit';
+import {ISimpleUnit} from './ISimpleUnit';
+import {SimpleBaseUnit} from './SimpleBaseUnit';
+import {SimpleUnit} from './SimpleUnit';
 
 export abstract class SimpleDerivedUnit extends SimpleUnit implements ISimpleUnit, IDerivedUnit {
     public abstract baseUnit: SimpleBaseUnit;

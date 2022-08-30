@@ -6,10 +6,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {UsDerivedUnit} from "../UsDerivedUnit";
-import {Pound} from "./Pound";
+import {UsDerivedUnit} from '../UsDerivedUnit';
+import {Pound} from './Pound';
 
 export class Quarter extends UsDerivedUnit {
-    public symbol = "qr";
+    public symbol = 'qr';
     public baseUnit = new Pound(this.value * 25);
 }

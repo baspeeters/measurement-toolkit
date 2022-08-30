@@ -6,34 +6,34 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {SimpleBaseUnit} from "../../SimpleBaseUnit";
-import {IUnitOfMass} from "../IUnitOfMass";
-import {Pound} from "../US/Avoirdupois/Pound";
-import {TroyOunce as TroyOunce} from "../US/Troy/TroyOunce";
-import {TroyPound as TroyPound} from "../US/Troy/TroyPound";
-import {Attogram} from "./Attogram";
-import {Centigram} from "./Centigram";
-import {Decagram} from "./Decagram";
-import {Decigram} from "./Decigram";
-import {Exagram} from "./Exagram";
-import {Femtogram} from "./Femtogram";
-import {Gigagram} from "./Gigagram";
-import {Gram} from "./Gram";
-import {Hectogram} from "./Hectogram";
-import {Megagram} from "./Megagram";
-import {Microgram} from "./Microgram";
-import {Milligram} from "./Milligram";
-import {Nanogram} from "./Nanogram";
-import {Petagram} from "./Petagram";
-import {Picogram} from "./Picogram";
-import {Teragram} from "./Teragram";
-import {Yoctogram} from "./Yoctogram";
-import {Yottagram} from "./Yottagram";
-import {Zeptogram} from "./Zeptogram";
-import {Zettagram} from "./Zettagram";
+import {SimpleBaseUnit} from '../../SimpleBaseUnit';
+import {IUnitOfMass} from '../IUnitOfMass';
+import {Pound} from '../US/Avoirdupois/Pound';
+import {TroyOunce as TroyOunce} from '../US/Troy/TroyOunce';
+import {TroyPound as TroyPound} from '../US/Troy/TroyPound';
+import {Attogram} from './Attogram';
+import {Centigram} from './Centigram';
+import {Decagram} from './Decagram';
+import {Decigram} from './Decigram';
+import {Exagram} from './Exagram';
+import {Femtogram} from './Femtogram';
+import {Gigagram} from './Gigagram';
+import {Gram} from './Gram';
+import {Hectogram} from './Hectogram';
+import {Megagram} from './Megagram';
+import {Microgram} from './Microgram';
+import {Milligram} from './Milligram';
+import {Nanogram} from './Nanogram';
+import {Petagram} from './Petagram';
+import {Picogram} from './Picogram';
+import {Teragram} from './Teragram';
+import {Yoctogram} from './Yoctogram';
+import {Yottagram} from './Yottagram';
+import {Zeptogram} from './Zeptogram';
+import {Zettagram} from './Zettagram';
 
 export class Kilogram extends SimpleBaseUnit implements IUnitOfMass {
-    public symbol = "kg";
+    public symbol = 'kg';
 
     public derivedUnits = {
         Yoctogram: () => new Yoctogram(this.value * Math.pow(10, 27)),
