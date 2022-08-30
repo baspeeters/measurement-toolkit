@@ -6,19 +6,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {expect} from "chai";
-import {TroyOunce, TroyPound} from "../../../../../../src/main";
+import {expect} from 'chai';
+import {TroyOunce, TroyPound} from '../../../../../../src/main';
 
-describe("US Customary System for Mass (Troy)", () => {
+describe('US Customary System for Mass (Troy)', () => {
     [
-        ["TroyPound", new TroyPound(1), "Gram", "373.2417216000000"],
-        ["TroyPound", new TroyPound(1), "Ounce", "13.1657142857143"],
-        ["TroyPound", new TroyPound(1), "TroyOunce", "12.0000000000000"],
-        ["TroyPound", new TroyPound(1), "Grain", "5760.0000000000000"],
+        ['TroyPound', new TroyPound(1), 'Gram', '373.2417216000000'],
+        ['TroyPound', new TroyPound(1), 'Ounce', '13.1657142857143'],
+        ['TroyPound', new TroyPound(1), 'TroyOunce', '12.0000000000000'],
+        ['TroyPound', new TroyPound(1), 'Grain', '5760.0000000000000'],
 
-        ["TroyOunce", new TroyOunce(1), "Gram", "31.1034768000000"],
-        ["TroyOunce", new TroyOunce(1), "Ounce", "1.0971428571429"],
-        ["TroyOunce", new TroyOunce(1), "Grain", "480.0000000000000"],
+        ['TroyOunce', new TroyOunce(1), 'Gram', '31.1034768000000'],
+        ['TroyOunce', new TroyOunce(1), 'Ounce', '1.0971428571429'],
+        ['TroyOunce', new TroyOunce(1), 'Grain', '480.0000000000000'],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ].map((data: any) => {
         const fromUnitName = data[0];
         const fromUnit = data[1];
@@ -29,13 +30,13 @@ describe("US Customary System for Mass (Troy)", () => {
             expect(fromUnit.to).to.respondTo(toClass);
 
             [
-                "Dram",
-                "Grain",
-                "Hundredweight",
-                "Ounce",
-                "Pound",
-                "Quarter",
-                "AvoirdupoisTon",
+                'Dram',
+                'Grain',
+                'Hundredweight',
+                'Ounce',
+                'Pound',
+                'Quarter',
+                'AvoirdupoisTon',
             ].map((otherUnit: string) => {
                 expect(fromUnit.to).to.respondTo(otherUnit);
             });
@@ -45,15 +46,15 @@ describe("US Customary System for Mass (Troy)", () => {
             expect(conversion.value.toFixed(13)).to.equal(conversion.value.toFixed(13));
             expect(conversion.value.toFixed(13)).to.equal(toValue);
 
-            expect(conversion.to[fromUnitName]().value.toFixed(13)).to.equal("1.0000000000000");
+            expect(conversion.to[fromUnitName]().value.toFixed(13)).to.equal('1.0000000000000');
         });
     });
 
-    it("Should have symbols", () => {
+    it('Should have symbols', () => {
         const toz = new TroyOunce(6);
-        expect(toz.toString()).to.equal("6 oz (t)");
+        expect(toz.toString()).to.equal('6 oz (t)');
 
         const tlb = new TroyPound(4);
-        expect(tlb.toString()).to.equal("4 lb (t)");
+        expect(tlb.toString()).to.equal('4 lb (t)');
     });
 });

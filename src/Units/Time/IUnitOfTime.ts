@@ -6,7 +6,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {ISimpleUnit} from "../ISimpleUnit";
+import {ISimpleUnit} from '../ISimpleUnit';
 
 export interface IUnitOfTime extends ISimpleUnit {
     to: { [key: string]: () => IUnitOfTime };

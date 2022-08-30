@@ -6,32 +6,32 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {SimpleBaseUnit} from "../../SimpleBaseUnit";
-import {IUnitOfLength} from "../IUnitOfLength";
-import {Yard} from "../US/Yard";
-import {Attometer} from "./Attometer";
-import {Centimeter} from "./Centimeter";
-import {Decameter} from "./Decameter";
-import {Decimeter} from "./Decimeter";
-import {Exameter} from "./Exameter";
-import {Femtometer} from "./Femtometer";
-import {Gigameter} from "./Gigameter";
-import {Hectometer} from "./Hectometer";
-import {Kilometer} from "./Kilometer";
-import {Megameter} from "./Megameter";
-import {Micrometer} from "./Micrometer";
-import {Millimeter} from "./Millimeter";
-import {Nanometer} from "./Nanometer";
-import {Petameter} from "./Petameter";
-import {Picometer} from "./Picometer";
-import {Terameter} from "./Terameter";
-import {Yoctometer} from "./Yoctometer";
-import {Yottameter} from "./Yottameter";
-import {Zeptometer} from "./Zeptometer";
-import {Zettameter} from "./Zettameter";
+import {SimpleBaseUnit} from '../../SimpleBaseUnit';
+import {IUnitOfLength} from '../IUnitOfLength';
+import {Yard} from '../US/Yard';
+import {Attometer} from './Attometer';
+import {Centimeter} from './Centimeter';
+import {Decameter} from './Decameter';
+import {Decimeter} from './Decimeter';
+import {Exameter} from './Exameter';
+import {Femtometer} from './Femtometer';
+import {Gigameter} from './Gigameter';
+import {Hectometer} from './Hectometer';
+import {Kilometer} from './Kilometer';
+import {Megameter} from './Megameter';
+import {Micrometer} from './Micrometer';
+import {Millimeter} from './Millimeter';
+import {Nanometer} from './Nanometer';
+import {Petameter} from './Petameter';
+import {Picometer} from './Picometer';
+import {Terameter} from './Terameter';
+import {Yoctometer} from './Yoctometer';
+import {Yottameter} from './Yottameter';
+import {Zeptometer} from './Zeptometer';
+import {Zettameter} from './Zettameter';
 
 export class Meter extends SimpleBaseUnit implements IUnitOfLength {
-    public symbol = "m";
+    public symbol = 'm';
 
     public derivedUnits = {
         Yoctometer: () => new Yoctometer(this.value * Math.pow(10, 24)),

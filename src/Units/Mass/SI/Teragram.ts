@@ -6,10 +6,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {Kilogram} from "./Kilogram";
-import {SiDerivedUnit} from "./SiDerivedUnit";
+import {Kilogram} from './Kilogram';
+import {SiDerivedUnit} from './SiDerivedUnit';
 
 export class Teragram extends SiDerivedUnit {
-    public symbol = "Tg";
+    public symbol = 'Tg';
     public baseUnit = new Kilogram(this.value * Math.pow(10, 9));
 }

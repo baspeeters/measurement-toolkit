@@ -6,34 +6,34 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {SimpleBaseUnit} from "../../SimpleBaseUnit";
-import {IUnitOfTime} from "../IUnitOfTime";
-import {Day} from "../Other/Day";
-import {Hour} from "../Other/Hour";
-import {Minute} from "../Other/Minute";
-import {Attosecond} from "./Attosecond";
-import {Centisecond} from "./Centisecond";
-import {Decasecond} from "./Decasecond";
-import {Decisecond} from "./Decisecond";
-import {Exasecond} from "./Exasecond";
-import {Femtosecond} from "./Femtosecond";
-import {Gigasecond} from "./Gigasecond";
-import {Hectosecond} from "./Hectosecond";
-import {Kilosecond} from "./Kilosecond";
-import {Megasecond} from "./Megasecond";
-import {Microsecond} from "./Microsecond";
-import {Millisecond} from "./Millisecond";
-import {Nanosecond} from "./Nanosecond";
-import {Petasecond} from "./Petasecond";
-import {Picosecond} from "./Picosecond";
-import {Terasecond} from "./Terasecond";
-import {Yoctosecond} from "./Yoctosecond";
-import {Yottasecond} from "./Yottasecond";
-import {Zeptosecond} from "./Zeptosecond";
-import {Zettasecond} from "./Zettasecond";
+import {SimpleBaseUnit} from '../../SimpleBaseUnit';
+import {IUnitOfTime} from '../IUnitOfTime';
+import {Day} from '../Other/Day';
+import {Hour} from '../Other/Hour';
+import {Minute} from '../Other/Minute';
+import {Attosecond} from './Attosecond';
+import {Centisecond} from './Centisecond';
+import {Decasecond} from './Decasecond';
+import {Decisecond} from './Decisecond';
+import {Exasecond} from './Exasecond';
+import {Femtosecond} from './Femtosecond';
+import {Gigasecond} from './Gigasecond';
+import {Hectosecond} from './Hectosecond';
+import {Kilosecond} from './Kilosecond';
+import {Megasecond} from './Megasecond';
+import {Microsecond} from './Microsecond';
+import {Millisecond} from './Millisecond';
+import {Nanosecond} from './Nanosecond';
+import {Petasecond} from './Petasecond';
+import {Picosecond} from './Picosecond';
+import {Terasecond} from './Terasecond';
+import {Yoctosecond} from './Yoctosecond';
+import {Yottasecond} from './Yottasecond';
+import {Zeptosecond} from './Zeptosecond';
+import {Zettasecond} from './Zettasecond';
 
 export class Second extends SimpleBaseUnit implements IUnitOfTime {
-    public symbol = "s";
+    public symbol = 's';
 
     public derivedUnits = {
         Yoctosecond: () => new Yoctosecond(this.value * Math.pow(10, 24)),

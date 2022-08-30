@@ -6,11 +6,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {SimpleDerivedUnit} from "../../../SimpleDerivedUnit";
-import {TroyPound} from "./TroyPound";
+import {SimpleDerivedUnit} from '../../../SimpleDerivedUnit';
+import {TroyPound} from './TroyPound';
 
 export class TroyOunce extends SimpleDerivedUnit {
-    public symbol = "oz (t)";
+    public symbol = 'oz (t)';
 
     public baseUnit: TroyPound = new TroyPound(this.value / 12);
 
