@@ -26,43 +26,43 @@ export abstract class SimpleUnit extends Unit implements ISimpleUnit {
         return this.converters;
     }
 
-    public subtract(unit: SimpleUnit): this {
+    public subtract(unit: ISimpleUnit): this {
         this.value -= unit.to[this.constructor.name]().value;
 
         return this;
     }
 
-    public add(unit: SimpleUnit): this {
+    public add(unit: ISimpleUnit): this {
         this.value += unit.to[this.constructor.name]().value;
 
         return this;
     }
 
-    public divideBy(unit: SimpleUnit): this {
+    public divideBy(unit: ISimpleUnit): this {
         this.value /= unit.to[this.constructor.name]().value;
 
         return this;
     }
 
-    public dividedBy(unit: SimpleUnit): this {
+    public dividedBy(unit: ISimpleUnit): this {
         this.value = unit.to[this.constructor.name]().value / this.value;
 
         return this;
     }
 
-    public multiply(unit: SimpleUnit): this {
+    public multiply(unit: ISimpleUnit): this {
         this.value *= unit.to[this.constructor.name]().value;
 
         return this;
     }
 
-    public percentageOf(unit: SimpleUnit): this {
+    public percentageOf(unit: ISimpleUnit): this {
         this.value = (this.value / unit.to[this.constructor.name]().value) * 100;
 
         return this;
     }
 
-    public percentageOfThis(unit: SimpleUnit): this {
+    public percentageOfThis(unit: ISimpleUnit): this {
         this.value = (unit.to[this.constructor.name]().value / this.value) * 100;
 
         return this;
