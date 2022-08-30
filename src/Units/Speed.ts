@@ -47,9 +47,7 @@ export class Speed extends Unit implements ICompoundUnit {
             distance = distance.to[this.distance.constructor.name]();
         }
 
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        return new Time[this.time.constructor.name](
+        return new Time[this.time.constructor.name as keyof typeof Time](
             this.time.value * (distance.value / this.distance.value),
         );
     }
@@ -65,9 +63,7 @@ export class Speed extends Unit implements ICompoundUnit {
             duration = duration.to[this.time.constructor.name]();
         }
 
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        return new Length[this.distance.constructor.name](
+        return new Length[this.distance.constructor.name as keyof typeof Length](
             (this.distance.value / this.time.value)
             * duration.value,
         );

@@ -6,15 +6,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from '../../IBaseUnit';
 import {SimpleBaseUnit} from '../../SimpleBaseUnit';
 import {SimpleDerivedUnit} from '../../SimpleDerivedUnit';
 import {IUnitOfMass} from '../IUnitOfMass';
+import {ISimpleBaseUnit} from '../../ISimpleBaseUnit';
 
 export abstract class SiDerivedUnit extends SimpleDerivedUnit implements IUnitOfMass {
     public abstract baseUnit: SimpleBaseUnit;
 
     protected baseUnitConverter = {
-        Kilogram: (): IBaseUnit => this.baseUnit,
+        Kilogram: (): ISimpleBaseUnit => this.baseUnit,
     };
 }

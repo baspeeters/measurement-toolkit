@@ -6,17 +6,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from './IBaseUnit';
-import {IDerivedUnit} from './IDerivedUnit';
-import {ISimpleUnit} from './ISimpleUnit';
-import {SimpleBaseUnit} from './SimpleBaseUnit';
 import {SimpleUnit} from './SimpleUnit';
+import {ISimpleBaseUnit} from './ISimpleBaseUnit';
+import {ISimpleDerivedUnit} from './ISimpleDerivedUnit';
+import {ISimpleUnit} from './ISimpleUnit';
 
-export abstract class SimpleDerivedUnit extends SimpleUnit implements ISimpleUnit, IDerivedUnit {
-    public abstract baseUnit: SimpleBaseUnit;
-    protected abstract baseUnitConverter: { [key: string]: () => IBaseUnit };
+export abstract class SimpleDerivedUnit extends SimpleUnit implements ISimpleDerivedUnit {
+    public abstract baseUnit: ISimpleBaseUnit;
+    protected abstract baseUnitConverter: { [key: string]: () => ISimpleBaseUnit };
 
-    public getConverters(): { [key: string]: () => ISimpleUnit } {
+    getConverters(): { [key: string]: () => ISimpleUnit } {
         this.converters = {
             ...super.getConverters(),
             ...this.baseUnit.derivedUnits,

@@ -6,7 +6,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import {IBaseUnit} from '../../../IBaseUnit';
 import {SimpleBaseUnit} from '../../../SimpleBaseUnit';
 import {Kilogram} from '../../SI/Kilogram';
 import {AvoirdupoisTon} from './AvoirdupoisTon';
@@ -15,8 +14,9 @@ import {Grain} from './Grain';
 import {Hundredweight} from './Hundredweight';
 import {Ounce} from './Ounce';
 import {Quarter} from './Quarter';
+import {ISimpleBaseUnit} from '../../../ISimpleBaseUnit';
 
-export class Pound extends SimpleBaseUnit implements IBaseUnit {
+export class Pound extends SimpleBaseUnit implements ISimpleBaseUnit {
     public symbol = 'lb';
 
     public derivedUnits = {
