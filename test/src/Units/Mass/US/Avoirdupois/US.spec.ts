@@ -7,14 +7,14 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {AvoirdupoisTon} from '../../../../../../src/main';
-import {Dram} from '../../../../../../src/main';
-import {Grain} from '../../../../../../src/main';
-import {Hundredweight} from '../../../../../../src/main';
-import {Ounce} from '../../../../../../src/main';
-import {Pound} from '../../../../../../src/main';
-import {Quarter} from '../../../../../../src/main';
-import {UsDerivedUnit} from '../../../../../../src/main';
+import {AvoirdupoisTon} from '../../../../../../src/index';
+import {Dram} from '../../../../../../src/index';
+import {Grain} from '../../../../../../src/index';
+import {Hundredweight} from '../../../../../../src/index';
+import {Ounce} from '../../../../../../src/index';
+import {Pound} from '../../../../../../src/index';
+import {Quarter} from '../../../../../../src/index';
+import {UsDerivedUnit} from '../../../../../../src/index';
 
 describe('US Customary System for Mass (Avoirdupois)', () => {
     [

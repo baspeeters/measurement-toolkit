@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Kilosecond} from '../../../../../src/main';
+import {Kilosecond} from '../../../../../src/index';
 
 describe('Kilosecond', () => {
     it('should convert kiloseconds to seconds and back', () => {

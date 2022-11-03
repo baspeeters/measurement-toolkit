@@ -7,28 +7,28 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Attosecond} from '../../../../../src/main';
-import {Centisecond} from '../../../../../src/main';
-import {Decasecond} from '../../../../../src/main';
-import {Decisecond} from '../../../../../src/main';
-import {Exasecond} from '../../../../../src/main';
-import {Femtosecond} from '../../../../../src/main';
-import {Gigasecond} from '../../../../../src/main';
-import {Hectosecond} from '../../../../../src/main';
-import {Kilosecond} from '../../../../../src/main';
-import {Megasecond} from '../../../../../src/main';
-import {Microsecond} from '../../../../../src/main';
-import {Millisecond} from '../../../../../src/main';
-import {Nanosecond} from '../../../../../src/main';
-import {Petasecond} from '../../../../../src/main';
-import {Picosecond} from '../../../../../src/main';
-import {Second} from '../../../../../src/main';
+import {Attosecond} from '../../../../../src/index';
+import {Centisecond} from '../../../../../src/index';
+import {Decasecond} from '../../../../../src/index';
+import {Decisecond} from '../../../../../src/index';
+import {Exasecond} from '../../../../../src/index';
+import {Femtosecond} from '../../../../../src/index';
+import {Gigasecond} from '../../../../../src/index';
+import {Hectosecond} from '../../../../../src/index';
+import {Kilosecond} from '../../../../../src/index';
+import {Megasecond} from '../../../../../src/index';
+import {Microsecond} from '../../../../../src/index';
+import {Millisecond} from '../../../../../src/index';
+import {Nanosecond} from '../../../../../src/index';
+import {Petasecond} from '../../../../../src/index';
+import {Picosecond} from '../../../../../src/index';
+import {Second} from '../../../../../src/index';
 import {SiDerivedUnit} from '../../../../../src/Units/Time/SI/SiDerivedUnit';
-import {Terasecond} from '../../../../../src/main';
-import {Yoctosecond} from '../../../../../src/main';
-import {Yottasecond} from '../../../../../src/main';
-import {Zeptosecond} from '../../../../../src/main';
-import {Zettasecond} from '../../../../../src/main';
+import {Terasecond} from '../../../../../src/index';
+import {Yoctosecond} from '../../../../../src/index';
+import {Yottasecond} from '../../../../../src/index';
+import {Zeptosecond} from '../../../../../src/index';
+import {Zettasecond} from '../../../../../src/index';
 
 describe('SI : Time', () => {
     it('should convert between SI units in whole numbers', () => {
