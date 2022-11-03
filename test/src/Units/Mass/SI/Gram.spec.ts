@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Gram} from '../../../../../src/main';
+import {Gram} from '../../../../../src/index';
 
 describe('Gram', () => {
     it('should convert grams to kilograms and back', () => {

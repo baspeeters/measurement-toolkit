@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {TroyOunce, TroyPound} from '../../../../../../src/main';
+import {TroyOunce, TroyPound} from '../../../../../../src/index';
 
 describe('US Customary System for Mass (Troy)', () => {
     [

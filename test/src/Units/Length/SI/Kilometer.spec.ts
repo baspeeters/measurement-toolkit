@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Kilometer} from '../../../../../src/main';
-import {Yard} from '../../../../../src/main';
+import {Kilometer} from '../../../../../src/index';
+import {Yard} from '../../../../../src/index';
 
 describe('Kilometer', () => {
     it('should convert kilometers to meters and back', () => {

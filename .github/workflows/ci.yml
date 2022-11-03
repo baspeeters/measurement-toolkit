@@ -82,9 +82,9 @@ jobs:
       - run: npm ci
 
       - name: Build
-        run: npm run build:npm
+        run: npm run build
 
-      - name: Publish to npmjs
+      - name: Publish to npmjs (dry run)
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --dry-run

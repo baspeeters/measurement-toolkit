@@ -7,28 +7,28 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Attogram} from '../../../../../src/main';
-import {Centigram} from '../../../../../src/main';
-import {Decagram} from '../../../../../src/main';
-import {Decigram} from '../../../../../src/main';
-import {Exagram} from '../../../../../src/main';
-import {Femtogram} from '../../../../../src/main';
-import {Gigagram} from '../../../../../src/main';
-import {Gram} from '../../../../../src/main';
-import {Hectogram} from '../../../../../src/main';
-import {Kilogram} from '../../../../../src/main';
-import {Megagram} from '../../../../../src/main';
-import {Microgram} from '../../../../../src/main';
-import {Milligram} from '../../../../../src/main';
-import {Nanogram} from '../../../../../src/main';
-import {Petagram} from '../../../../../src/main';
-import {Picogram} from '../../../../../src/main';
-import {SiDerivedUnit} from '../../../../../src/main';
-import {Teragram} from '../../../../../src/main';
-import {Yoctogram} from '../../../../../src/main';
-import {Yottagram} from '../../../../../src/main';
-import {Zeptogram} from '../../../../../src/main';
-import {Zettagram} from '../../../../../src/main';
+import {Attogram} from '../../../../../src/index';
+import {Centigram} from '../../../../../src/index';
+import {Decagram} from '../../../../../src/index';
+import {Decigram} from '../../../../../src/index';
+import {Exagram} from '../../../../../src/index';
+import {Femtogram} from '../../../../../src/index';
+import {Gigagram} from '../../../../../src/index';
+import {Gram} from '../../../../../src/index';
+import {Hectogram} from '../../../../../src/index';
+import {Kilogram} from '../../../../../src/index';
+import {Megagram} from '../../../../../src/index';
+import {Microgram} from '../../../../../src/index';
+import {Milligram} from '../../../../../src/index';
+import {Nanogram} from '../../../../../src/index';
+import {Petagram} from '../../../../../src/index';
+import {Picogram} from '../../../../../src/index';
+import {SiDerivedUnit} from '../../../../../src/index';
+import {Teragram} from '../../../../../src/index';
+import {Yoctogram} from '../../../../../src/index';
+import {Yottagram} from '../../../../../src/index';
+import {Zeptogram} from '../../../../../src/index';
+import {Zettagram} from '../../../../../src/index';
 
 describe('SI: Mass', () => {
     it('should convert between SI units in whole numbers', () => {

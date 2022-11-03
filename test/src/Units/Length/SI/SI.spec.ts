@@ -7,28 +7,28 @@
  * file that was distributed with this source code.
  */
 import {expect} from 'chai';
-import {Attometer} from '../../../../../src/main';
-import {Centimeter} from '../../../../../src/main';
-import {Decameter} from '../../../../../src/main';
-import {Decimeter} from '../../../../../src/main';
-import {Exameter} from '../../../../../src/main';
-import {Femtometer} from '../../../../../src/main';
-import {Gigameter} from '../../../../../src/main';
-import {Hectometer} from '../../../../../src/main';
-import {Kilometer} from '../../../../../src/main';
-import {Megameter} from '../../../../../src/main';
-import {Meter} from '../../../../../src/main';
-import {Micrometer} from '../../../../../src/main';
-import {Millimeter} from '../../../../../src/main';
-import {Nanometer} from '../../../../../src/main';
-import {Petameter} from '../../../../../src/main';
-import {Picometer} from '../../../../../src/main';
+import {Attometer} from '../../../../../src/index';
+import {Centimeter} from '../../../../../src/index';
+import {Decameter} from '../../../../../src/index';
+import {Decimeter} from '../../../../../src/index';
+import {Exameter} from '../../../../../src/index';
+import {Femtometer} from '../../../../../src/index';
+import {Gigameter} from '../../../../../src/index';
+import {Hectometer} from '../../../../../src/index';
+import {Kilometer} from '../../../../../src/index';
+import {Megameter} from '../../../../../src/index';
+import {Meter} from '../../../../../src/index';
+import {Micrometer} from '../../../../../src/index';
+import {Millimeter} from '../../../../../src/index';
+import {Nanometer} from '../../../../../src/index';
+import {Petameter} from '../../../../../src/index';
+import {Picometer} from '../../../../../src/index';
 import {SiDerivedUnit} from '../../../../../src/Units/Length/SI/SiDerivedUnit';
-import {Terameter} from '../../../../../src/main';
-import {Yoctometer} from '../../../../../src/main';
-import {Yottameter} from '../../../../../src/main';
-import {Zeptometer} from '../../../../../src/main';
-import {Zettameter} from '../../../../../src/main';
+import {Terameter} from '../../../../../src/index';
+import {Yoctometer} from '../../../../../src/index';
+import {Yottameter} from '../../../../../src/index';
+import {Zeptometer} from '../../../../../src/index';
+import {Zettameter} from '../../../../../src/index';
 
 describe('SI : Length', () => {
     it('should convert between SI units in whole numbers', () => {
